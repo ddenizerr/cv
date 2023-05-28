@@ -21,5 +21,5 @@ Route::get('/', function () {
 Route::controller(ProjectController::class)->prefix('projects')->name('projects.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/create', 'create')->name('create');
-    Route::patch('/update', 'update')->name('update');
+    Route::patch('/{project}/update', 'update')->name('update');
 });

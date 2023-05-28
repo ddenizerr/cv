@@ -16,15 +16,16 @@
             <th>{{ project.title }}</th>
             <td>{{ project.description }}</td>
             <td>{{ project.type }}</td>
-            <td><!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" @click="showModal=true">
+            <td>
+                <button type="button" class="btn btn-primary" @click="showModal(project);">
                     Edit
                 </button>
+                <button class="btn btn-danger"> Delete</button>
             </td>
         </tr>
         </tbody>
     </table>
-    <main-modal v-if="showModal"></main-modal>
+    <main-modal v-if="selectedProject" :selected-project="selectedProject"></main-modal>
 </template>
 <script>
 import mainModal from "../MainModal.vue";
@@ -34,12 +35,14 @@ export default {
     props: ['projects'],
     data() {
         return {
-            showModal: false,
+            selectedProject:null,
         }
+    },
+    methods: {
+        showModal(project) {
+            this.selectedProject = project;
+        }
+
     }
 }
 </script>
-
-<style scoped>
-
-</style>

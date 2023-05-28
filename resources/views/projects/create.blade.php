@@ -12,8 +12,11 @@
     </div>
 @endif
 
-<form method="POST" action="{{ route('projects.update') }}">
-@csrf
+<a href="{{route('projects.index')}}" class="btn btn-secondary">Back</a>
+
+<form method="post" action="{{ route('projects.update') }} " enctype="multipart/form-data">
+    @csrf
+    @method('patch')
     <div class="form-row">
         <div class="form-group col-md-12">
             <label for="title">Title</label>
