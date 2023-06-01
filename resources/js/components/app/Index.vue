@@ -1,8 +1,5 @@
 <template>
-
-    <hr>
-
-    <div class=" bg-primary">
+    <div class="">
         <div class="col-md-12" v-for="(project,index) in projects">
             <div class="card" >
                 <img class="card-img-top" alt="...">

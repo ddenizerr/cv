@@ -15,12 +15,6 @@
 </head>
 <body class="antialiased">
 <div class="container">
-    <h1> Hello Sailor! </h1>
-
-    <h5 class="mt-4">
-        I am a full stack developer located in London (atm). Actively working in industry since 2021. You can find various information at my website. So, enjoy!
-    </h5>
-
     <div id="app">
         @yield('content')
     </div>
