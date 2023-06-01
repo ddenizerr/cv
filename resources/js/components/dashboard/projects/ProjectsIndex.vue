@@ -20,7 +20,7 @@
                 <button type="button" class="btn btn-primary" @click="showModal(project);">
                     Edit
                 </button>
-                <button class="btn btn-danger"> Delete</button>
+                <button class="btn btn-danger" @click="deleteProject(project)">Delete</button>
             </td>
         </tr>
         </tbody>
@@ -28,21 +28,40 @@
     <main-modal v-if="selectedProject" :selected-project="selectedProject"></main-modal>
 </template>
 <script>
-import mainModal from "../MainModal.vue";
+import mainModal from "../../MainModal.vue";
+import axios from "axios";
 
 export default {
     components: {mainModal},
-    props: ['projects'],
     data() {
         return {
-            selectedProject:null,
+            selectedProject: null,
+            projects: {},
         }
     },
     methods: {
         showModal(project) {
             this.selectedProject = project;
+        },
+        deleteProject(project) {
+            console.log(project);
+            axios.delete('/projects/' + project.id + '/delete').then(function (response) {
+                console.log(response);
+            }).catch(function (error) {
+                console.log(error);
+            });
+            this.fetchProjects();
+        },
+        fetchProjects() {
+            axios.get('/projects/fetch').then(response => {
+                console.log(response.data.projects)
+                this.projects = response.data.projects;
+            });
         }
 
+    },
+    mounted() {
+        this.fetchProjects();
     }
 }
 </script>

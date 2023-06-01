@@ -1,16 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProjectRequest;
 use App\Models\Project;
-use http\Env\Response;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
+use function redirect;
+use function response;
+use function view;
 
 class ProjectController extends Controller
 {
@@ -19,11 +22,16 @@ class ProjectController extends Controller
      */
     public function index(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
-        $projects = Project::all();
+        return view('dashboard.projects.index');
+    }
 
-        return view('projects.index')->with([
-            'projects' => $projects,
-        ]);
+    /**
+     * @return JsonResponse
+     */
+    public function fetch(): JsonResponse
+    {
+        $projects = Project::all();
+        return response()->json(['projects'=>$projects]);
     }
 
     /**
@@ -31,11 +39,12 @@ class ProjectController extends Controller
      */
     public function create(): Application|View|Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('projects.create');
+        return view('dashboard.projects.create');
     }
 
     /**
      * @param StoreProjectRequest $request
+     * @param Project $project
      * @return JsonResponse
      */
     public function update(StoreProjectRequest $request, Project $project): JsonResponse
@@ -46,16 +55,25 @@ class ProjectController extends Controller
             'type' => $request->type,
         ]);
 
-//        Project::updateOrCreate($request->only('title', 'description','type'));
-
         return response()->json(['message'=>'Project details updated']);
     }
 
     /**
-     * @return void
+     * @param StoreProjectRequest $request
      */
-    public function remove()
+    public function store(StoreProjectRequest $request): Application|Redirector|\Illuminate\Contracts\Foundation\Application|RedirectResponse
     {
-        //
+        Project::create($request->all());
+        return redirect('/projects');
+    }
+
+    /**
+     * @param Project $project
+     * @return JsonResponse
+     */
+    public function delete(Project $project): JsonResponse
+    {
+        $project->delete();
+        return response()->json(['message'=>'Project is deleted!']);
     }
 }
