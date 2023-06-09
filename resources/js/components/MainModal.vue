@@ -63,7 +63,6 @@ export default {
                 type: this.selectedProject.type,
             }).then(response => {
                 this.$parent.fetchProject();
-                console.log(response);
             }).catch(error => {
                 console.log(error);
             });

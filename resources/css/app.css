@@ -1,4 +1,11 @@
 .main-body{
-    font-family: 'Indie Flower', cursive;
-    background-color: red;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.font-playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+.font-noto{
+    font-family: 'Noto Sans', sans-serif;
 }

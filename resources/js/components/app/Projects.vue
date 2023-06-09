@@ -1,5 +1,4 @@
 <template>
-
         <div class="col-md-12" v-for="(project,index) in projects">
             <a href="" style="text-decoration: none;" @click="">
                 <div class="card" >
@@ -28,7 +27,6 @@ export default {
     methods: {
         fetchProjects() {
             axios.get('/projects/fetch').then(response => {
-                console.log(response.data.projects)
                 this.projects = response.data.projects;
             });
         }

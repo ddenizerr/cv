@@ -44,17 +44,13 @@ export default {
             this.selectedProject = project;
         },
         deleteProject(project) {
-            console.log(project);
             axios.delete('/projects/' + project.id + '/delete').then(function (response) {
-                console.log(response);
             }).catch(function (error) {
-                console.log(error);
             });
             this.fetchProjects();
         },
         fetchProjects() {
             axios.get('/projects/fetch').then(response => {
-                console.log(response.data.projects)
                 this.projects = response.data.projects;
             });
         }

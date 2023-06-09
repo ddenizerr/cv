@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //DASHBOARD
-Route::controller(ProjectController::class)->prefix('career')->name('career.')->group(function () {
+Route::controller(ProjectController::class)->prefix('projects')->name('projects.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/fetch', 'fetch')->name('fetch');
     Route::get('/create', 'create')->name('create');
