@@ -22,7 +22,7 @@ class ProjectController extends Controller
      */
     public function index(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('dashboard.projects.index');
+        return view('dashboard.career.index');
     }
 
     /**
@@ -31,7 +31,7 @@ class ProjectController extends Controller
     public function fetch(): JsonResponse
     {
         $projects = Project::all();
-        return response()->json(['projects'=>$projects]);
+        return response()->json(['career'=>$projects]);
     }
 
     /**
@@ -39,7 +39,7 @@ class ProjectController extends Controller
      */
     public function create(): Application|View|Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('dashboard.projects.create');
+        return view('dashboard.career.create');
     }
 
     /**
@@ -64,7 +64,7 @@ class ProjectController extends Controller
     public function store(StoreProjectRequest $request): Application|Redirector|\Illuminate\Contracts\Foundation\Application|RedirectResponse
     {
         Project::create($request->all());
-        return redirect('/projects');
+        return redirect('/career');
     }
 
     /**

@@ -10,14 +10,13 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Deniz Denizer</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
     @vite(['resources/js/app.js', 'resources.css.app.css'])
-    <!-- Fonts -->
 </head>
-<body class="antialiased">
+<body class="main-body">
 
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -32,7 +31,7 @@
                     <a class="nav-link active" aria-current="page" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="/projects">Career</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled">Blog</a>
