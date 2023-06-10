@@ -80,9 +80,21 @@
     </div>
 </div>
 
-<footer class="footer">
+{{--<footer class="d-flex flex-wrap justify-content-between align-items-center">--}}
+{{--    <p class="col-md-4 mb-0 footer-trademark">© {{\Carbon\Carbon::now()->year}} Deniz Denizer</p>--}}
 
-</footer>
+{{--    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">--}}
+{{--        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>--}}
+{{--    </a>--}}
+
+{{--    <ul class="nav col-md-4 justify-content-end">--}}
+{{--        <li class="nav-item"><a href="#" class="nav-link px-2 footer-text">Home</a></li>--}}
+{{--        <li class="nav-item"><a href="#" class="nav-link px-2 footer-text">Features</a></li>--}}
+{{--        <li class="nav-item"><a href="#" class="nav-link px-2 footer-text">Pricing</a></li>--}}
+{{--        <li class="nav-item"><a href="#" class="nav-link px-2 footer-text">FAQs</a></li>--}}
+{{--        <li class="nav-item"><a href="#" class="nav-link px-2 footer-text">About</a></li>--}}
+{{--    </ul>--}}
+{{--</footer>--}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

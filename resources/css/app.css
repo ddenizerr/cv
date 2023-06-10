@@ -28,9 +28,10 @@
     font-size: 0.8rem;
 }
 
-.hr {
+hr {
     color: var(--mist-white);
-    box-shadow: 0 5px 10px -9px var(--mist-white);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    margin: 1rem;
 }
 
 .corner-scales {
@@ -116,6 +117,8 @@
     border-radius: 20px;
     outline: none;
     box-shadow: 0 0 10px var(--mist-white);
+    width: 20rem;
+    height: auto;
 }
 
 .card-title {
@@ -137,3 +140,12 @@
     font-size: 0.8rem;
 }
 
+/*FOOTER*/
+
+footer{
+    border-top:  1px solid var(--mist-white);
+    height: 1rem;
+}
+.footer-text{
+    color: var(--pale-mist)
+}
