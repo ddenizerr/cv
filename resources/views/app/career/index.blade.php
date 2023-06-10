@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('content')
-    <div class="mt-3">
+    <div class="mt-3 col-md-12">
 
         <!-- HEADER -->
         <div class="d-flex flex-start index-title font-cinzel">
@@ -11,6 +11,11 @@
         <!-- BODY CONTENT & COMPONENTS -->
         MYCV VUE COMPONENT HERE
 
-        <Projects></Projects>
+        <div class="col-md-10 d-flex justify-content-center">
+            <div class="row">
+                <Projects></Projects>
+            </div>
+
+        </div>
     </div>
 @endsection
