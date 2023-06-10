@@ -1,12 +1,15 @@
 <div class="row d-flex justify-content-around">
     <div class="col-lg-3 col-md-3 col-sm-12 m-1">
         <a href="#" style="text-decoration: none;">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card glow">
+                <img class="card-img-top" src="..." alt="">
                 <div class="card-body">
-                    <h5 class="card-title">About Me</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <div class="card-title">
+
+                        <h5 class="font-noto card-title-text"><i class="fa-solid fa-route fa-beat"></i> My Blog</h5>
+                    </div>
+                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus felis at
+                        molestie luctus.</p>
                 </div>
             </div>
         </a>
@@ -14,11 +17,15 @@
 
     <div class="col-lg-3 col-md-3 col-sm-12 m-1">
         <a {{-- href="#" --}} class="disabled" style="text-decoration: none;">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card glow">
+                <img class="card-img-top" src="..." alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Blog</h5>
-                    <p class="card-text">Coming Soon!</p>
+                    <div class="card-title">
+
+                        <h5 class="font-noto card-title-text"> <i class="fa-solid fa-feather fa-shake"></i> About Me</h5>
+                    </div>
+                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus felis at
+                        molestie luctus.</p>
                 </div>
             </div>
         </a>
@@ -26,12 +33,14 @@
 
     <div class="col-lg-3 col-md-3 col-sm-12 m-1">
         <a href="{{route('career.index')}}" style="text-decoration: none;">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card glow">
+                <img class="card-img-top" src="..." alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Career</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <div class="card-title row">
+                        <h5 class="font-noto card-title-text">  <i class="fa-solid fa-terminal fa-fade"></i> Career</h5>
+                    </div>
+                    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus felis at
+                        molestie luctus.</p>
                 </div>
             </div>
         </a>
