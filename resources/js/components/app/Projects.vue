@@ -1,8 +1,7 @@
 <template>
         <div class="col-md-12" v-for="(project,index) in projects">
-            <a href="" style="text-decoration: none;" @click="">
-                <div class="card" >
-                    <img class="card-img-top" alt="...">
+            <a href="" class="text-decoration-none" @click="">
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"> {{project.title}}</h5>
                         <p class="card-text">{{

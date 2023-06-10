@@ -1,6 +1,7 @@
 /*ROOT*/
 :root {
     --midnight-moss: #0b270b;
+    --aqua-haze: #eef5f0;
     --pale-mist: #f7fafc;
     --mist-white: #f1f1f1ff;
     --green-teal: #0cb577;
@@ -10,28 +11,43 @@
     --noto-font-family: 'Noto Sans', sans-serif;
 }
 
+
 /*BODY*/
 .main-body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--midnight-moss);
+    background-color: var(--aqua-haze);
     color: var(--pale-mist);
+}
+
+.text-moss{
+    color: var(--midnight-moss);
+}
+
+.bg-aqua{
+   background-color: var(--aqua-haze);
 }
 
 .index-title {
     margin-left: 1rem;
     margin-bottom: 0;
+    color: var(--midnight-moss)
 }
 
 .index-text {
     text-align: justify-all;
     padding: 0.8rem;
     font-size: 0.8rem;
+    color: var(--midnight-moss)
+
 }
 
 hr {
-    color: var(--mist-white);
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    color: var(--midnight-moss);
     margin: 1rem;
+}
+
+vr {
+    color: var(--midnight-moss);
 }
 
 .corner-scales {
@@ -91,33 +107,30 @@ hr {
 
 .font-handwriting {
     font-family: var(--hand-writing-font-family);
-    color: var(--mist-white);
 }
 
 .glow:hover {
-    -webkit-animation: glow 3s ease-in-out infinite alternate;
-    -moz-animation: glow 3s ease-in-out infinite alternate;
-    animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
     }
     to {
-        box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--green-teal), 0 0 50px var(--green-teal), 0 0 60px var(--green-teal), 0 0 70px var(--green-teal), 0 0 80px var(--green-teal);
+        box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--midnight-moss);
     }
 }
 
 /*CARDS*/
 
 .card {
-    background-color: transparent;
     border: none;
     border-radius: 20px;
     outline: none;
-    box-shadow: 0 0 10px var(--mist-white);
-    width: 20rem;
+    box-shadow: 0 0 10px var(--midnight-moss);
     height: auto;
 }
 
@@ -127,10 +140,12 @@ hr {
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    color: var(--midnight-moss)
 }
 
 .card-title-text{
     font-size: 1.5rem;
+    color: var(--midnight-moss)
 }
 
 .card-text {
@@ -138,14 +153,25 @@ hr {
     padding: 0.5rem;
     color: var(--mist-white);
     font-size: 0.8rem;
+    color: var(--midnight-moss)
 }
 
 /*FOOTER*/
 
 footer{
-    border-top:  1px solid var(--mist-white);
-    height: 1rem;
+    color: var(--midnight-moss);
+
 }
 .footer-text{
-    color: var(--pale-mist)
+    font-size: 1rem;
+}
+
+.footer-text-size{
+    font-size: 0.7rem;
+}
+
+/*SOCIAL*/
+
+.social-color{
+    color: var(--green-teal);
 }
