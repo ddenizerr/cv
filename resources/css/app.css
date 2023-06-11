@@ -5,12 +5,11 @@
     --pale-mist: #f7fafc;
     --mist-white: #f1f1f1ff;
     --green-teal: #0cb577;
-    --guiness-yellow: #fcdc5a;
+    --guiness-yellow: #eabf0b;
     --cinzel-font-family: 'Cinzel', serif;
     --hand-writing-font-family: 'Bilbo Swash Caps', cursive;
     --noto-font-family: 'Noto Sans', sans-serif;
 }
-
 
 /*BODY*/
 .main-body {
@@ -26,17 +25,24 @@
 .bg-aqua{
    background-color: var(--aqua-haze);
 }
+.bg-teal{
+   background-color: var(--green-teal);
+}
+
+.bg-guiness-yellow{
+    background: var(--guiness-yellow);
+}
 
 .index-title {
     margin-left: 1rem;
-    margin-bottom: 0;
+    font-size: 3rem;
     color: var(--midnight-moss)
 }
 
 .index-text {
     text-align: justify-all;
     padding: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--midnight-moss)
 
 }
@@ -132,6 +138,7 @@ vr {
     outline: none;
     box-shadow: 0 0 10px var(--midnight-moss);
     height: auto;
+    background-color: var(--midnight-moss);
 }
 
 .card-title {
@@ -140,25 +147,29 @@ vr {
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    color: var(--midnight-moss)
 }
 
 .card-title-text{
     font-size: 1.5rem;
-    color: var(--midnight-moss)
+    color: var(--aqua-haze)
 }
 
 .card-text {
     text-align: left;
     padding: 0.5rem;
-    color: var(--mist-white);
+    color: var(--aqua-haze);
     font-size: 0.8rem;
-    color: var(--midnight-moss)
 }
 
 /*FOOTER*/
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
     color: var(--midnight-moss);
 
 }
@@ -174,4 +185,37 @@ footer{
 
 .social-color{
     color: var(--green-teal);
+}
+
+/*CAREER*/
+
+.block-project-image{
+     width: auto;
+     height: 20rem;
+     filter: grayscale(75%);
+ }
+
+.block-project-image:hover{
+    filter: grayscale(0%);
+}
+
+.block{
+
+}
+.block-title{
+    color: var(--green-teal);
+}
+
+.block-body{
+    color: var(--midnight-moss);
+    font-size: 1rem;
+}
+.block-details{
+    font-size: 1rem;
+}
+
+/*QUOTE*/
+
+.quote{
+    font-size: 3.5rem;
 }

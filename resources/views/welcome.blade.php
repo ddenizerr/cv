@@ -44,7 +44,7 @@
                     <a class="nav-link " aria-current="page" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects">Career</a>
+                    <a class="nav-link" href="{{route('career.index')}}">Career</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Blog</a>
@@ -55,36 +55,38 @@
                     <a class="nav-link " aria-current="page" href="#">Contact Me</a>
                 </li>
             </ul>
-            {{--            <form class="d-flex" role="search">--}}
-            {{--                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">--}}
-            {{--                <button class="btn btn-outline-success" type="submit">Search</button>--}}
-            {{--            </form>--}}
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-8" id="app">
+    <div class="row d-flex justify-content-start" id="app">
+
+        <div class="col-6">
             @yield('content')
         </div>
+
     </div>
 </div>
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-2 py-2 bg-aqua ">
-    <div class="col-lg-4 d-flex align-items-center mx-3">
-        <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
-    </div>
-    <div class="col-lg-4">
-        <ul class="nav justify-content-end list-unstyled d-flex mx-3">
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram social-color"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin-in social-color"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-github social-color"></i></a></li>
-        </ul>
-    </div>
+<div class="d-flex flex-end bg-primary">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-aqua ">
+        <div class="col-lg-4 d-flex align-items-center mx-3">
+            <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
+        </div>
+        <div class="col-lg-4">
+            <ul class="nav justify-content-end list-unstyled d-flex mx-3">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram social-color"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="#"><i
+                            class="fa-brands fa-linkedin-in social-color"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-github social-color"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
 
-
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
