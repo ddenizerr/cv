@@ -1,5 +1,5 @@
-<div class="row p-3">
-    <div class="col-lg-4 col-md-4 col-sm-12">
+<div class="row p-3 d-flex align-items-stretch">
+    <div class="col-lg-4 col-md-12 col-sm-12 pb-1">
         <a {{-- href="#" --}} class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">
@@ -14,7 +14,7 @@
         </a>
     </div>
 
-    <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 pb-1">
         <a {{-- href="#" --}} class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">
@@ -29,7 +29,7 @@
         </a>
     </div>
 
-    <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 pb-1">
         <a href="{{route('career.index')}}" class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">

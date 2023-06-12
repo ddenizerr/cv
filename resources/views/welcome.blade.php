@@ -62,14 +62,14 @@
 <div class="container">
     <div class="row d-flex justify-content-start" id="app">
 
-        <div class="col-6">
+        <div class="col-lg-12 col-xl-6 col-md-12 col-sm-12 col-xs-12">
             @yield('content')
         </div>
 
     </div>
 </div>
 
-<div class="d-flex flex-end bg-primary">
+<div class="d-flex flex-end bg-primary mt-2">
     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-aqua ">
         <div class="col-lg-4 d-flex align-items-center mx-3">
             <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
