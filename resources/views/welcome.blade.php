@@ -27,7 +27,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid navbar-custom navbar-shadow ">
         <a class="navbar-brand navbar-colors text-center" href="{{route('home.index')}}"><img class="navbar-brand-logo"
-                                                                                              src="/images/deniz-logo-narrow.png"
+                                                                                              src="/images/Deniz Denizer.png"
                                                                                               alt="Deniz Denizer"></a>
         <div class="d-flex flex-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -69,8 +69,8 @@
     </div>
 </div>
 
-<div class="d-flex flex-end bg-primary mt-2">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-aqua ">
+<div class="d-flex flex-end mt-2">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-cream">
         <div class="col-lg-4 d-flex align-items-center mx-3">
             <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
         </div>

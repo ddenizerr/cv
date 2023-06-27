@@ -17,7 +17,7 @@
             <td>{{ project.description }}</td>
             <td>{{ project.type }}</td>
             <td>
-                <button type="button" class="btn bg-payne text-white" @click="showModal(project);">
+                <button type="button" class="btn bg-teal text-white" @click="showModal(project);">
                     Edit
                 </button>
                 <button class="btn bg-raspberry text-white" @click="deleteProject(project)">Delete</button>

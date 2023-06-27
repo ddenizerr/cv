@@ -1,10 +1,13 @@
-<div class="row p-3 bg-guiness-yellow mb-2 rounded">
+<div class="row p-3 bg-payne mb-2 rounded p-3 d-flex justify-content-center">
 
-    <h6> Quote of the Day</h6>
-    <p class="quote">
+    <h6 class="text-moss"> Quote of the Day</h6>
+    <p class="quote text-white">
         " You never lose when you lose, you lose when you give up. "
 
     </p>
-    <span class=" fs-4 text-moss" > - Mustafa Denizer</span>
+    <div class="row d-flex justify-content-end">
+    <span class=" fs-4 text-" > - Mustafa Denizer</span>
+
+    </div>
 
 </div>

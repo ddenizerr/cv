@@ -1,13 +1,14 @@
 /*ROOT*/
 :root {
-    --midnight-moss: #0b270b;
+    --midnight-moss: #7D62F4;
+    --slate-blue: #826AED;
     --aqua-haze: #eef5f0;
     --pale-mist: #f7fafc;
     --mist-white: #f1f1f1ff;
-    --green-teal: #0cb577;
+    --green-teal: #4BCD97;
     --guiness-yellow: #eabf0b;
     --dusty-lavander: #EC449B;
-    --raspberry: #CE2D4F;
+    --raspberry: #F67488;
     --payne-gray: #546A7B;
     --white: #FDFDFF;
     --onyx: #393D3F;
@@ -23,48 +24,66 @@
     color: var(--pale-mist);
 }
 
-.text-moss{
+.text-moss {
     color: var(--midnight-moss);
 }
 
-.bg-raspberry{
+.text-slate-blue{
+    color: var(--slate-blue);
+}
+
+.text-onyx {
+    color: var(--onyx);
+}
+
+.bg-slate {
+    background-color: var(--slate-blue);
+}
+
+.bg-raspberry {
     background-color: var(--raspberry);
 }
 
-.bg-payne{
+.bg-payne {
     background-color: var(--payne-gray);
 }
 
-bg-onyx{
+bg-onyx {
     background-color: var(--onyx)
 }
 
-.bg-aqua{
-   background-color: var(--aqua-haze);
-}
-.bg-teal{
-   background-color: var(--green-teal);
+.bg-aqua {
+    background-color: var(--aqua-haze);
 }
 
-.bg-guiness-yellow{
+.bg-teal {
+    background-color: var(--green-teal);
+}
+
+.bg-guiness-yellow {
     background: var(--guiness-yellow);
 }
 
-.bg-moss{
+.bg-moss {
     background-color: var(--midnight-moss);
 }
+
+.bg-cream {
+    background-color: var(--pale-mist);
+}
+
 
 .index-title {
     margin-left: 1rem;
     font-size: 3rem;
-    color: var(--midnight-moss)
+    color: var(--onyx);
 }
 
 .index-text {
     text-align: justify-all;
     padding: 0.8rem;
     font-size: 1rem;
-    color: var(--midnight-moss)
+    color: var(--onyx)
 
 }
 
@@ -91,7 +110,7 @@ vr {
 }
 
 .navbar-custom {
-    background-color: var(--midnight-moss);
+    background-color: var(--slate-blue);
     border-bottom: 1px solid var(--mist-white);
     font-family: var(--cinzel-font-family);
 }
@@ -170,7 +189,7 @@ vr {
     margin-bottom: 1rem;
 }
 
-.card-title-text{
+.card-title-text {
     font-size: 1.5rem;
     color: var(--aqua-haze)
 }
@@ -184,7 +203,7 @@ vr {
 
 /*FOOTER*/
 
-footer{
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -194,49 +213,52 @@ footer{
     color: var(--midnight-moss);
 
 }
-.footer-text{
+
+.footer-text {
     font-size: 1rem;
 }
 
-.footer-text-size{
+.footer-text-size {
     font-size: 0.7rem;
 }
 
 /*SOCIAL*/
 
-.social-color{
-    color: var(--green-teal);
+.social-color {
+    color: var(--midnight-moss);
 }
 
 /*CAREER*/
 
-.block-project-image{
-     width: auto;
-     height: 20rem;
-     filter: grayscale(75%);
- }
+.block-project-image {
+    width: auto;
+    height: 20rem;
+    filter: grayscale(75%);
+}
 
-.block-project-image:hover{
+.block-project-image:hover {
     filter: grayscale(0%);
 }
 
-.block{
+.block {
 
 }
-.block-title{
+
+.block-title {
     color: var(--green-teal);
 }
 
-.block-body{
+.block-body {
     color: var(--midnight-moss);
     font-size: 1rem;
 }
-.block-details{
+
+.block-details {
     font-size: 1rem;
 }
 
 /*QUOTE*/
 
-.quote{
+.quote {
     font-size: 3.5rem;
 }
