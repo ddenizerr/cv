@@ -6,6 +6,11 @@
     --mist-white: #f1f1f1ff;
     --green-teal: #0cb577;
     --guiness-yellow: #eabf0b;
+    --dusty-lavander: #EC449B;
+    --raspberry: #CE2D4F;
+    --payne-gray: #546A7B;
+    --white: #FDFDFF;
+    --onyx: #393D3F;
     --cinzel-font-family: 'Cinzel', serif;
     --hand-writing-font-family: 'Bilbo Swash Caps', cursive;
     --noto-font-family: 'Noto Sans', sans-serif;
@@ -14,12 +19,24 @@
 /*BODY*/
 .main-body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--aqua-haze);
+    background-color: var(--white);
     color: var(--pale-mist);
 }
 
 .text-moss{
     color: var(--midnight-moss);
+}
+
+.bg-raspberry{
+    background-color: var(--raspberry);
+}
+
+.bg-payne{
+    background-color: var(--payne-gray);
+}
+
+bg-onyx{
+    background-color: var(--onyx)
 }
 
 .bg-aqua{
@@ -31,6 +48,10 @@
 
 .bg-guiness-yellow{
     background: var(--guiness-yellow);
+}
+
+.bg-moss{
+    background-color: var(--midnight-moss);
 }
 
 .index-title {
@@ -95,7 +116,7 @@ vr {
 }
 
 .nav-link:hover {
-    color: var(--green-teal);
+    color: var(--guiness-yellow);
 }
 
 /*FONTS*/

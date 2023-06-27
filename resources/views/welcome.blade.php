@@ -60,9 +60,9 @@
 </nav>
 
 <div class="container">
-    <div class="row d-flex justify-content-start" id="app">
+    <div class="row d-flex justify-content-center" id="app">
 
-        <div class="col-lg-12 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-9">
             @yield('content')
         </div>
 

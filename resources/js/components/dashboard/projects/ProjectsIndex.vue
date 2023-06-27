@@ -1,5 +1,5 @@
 <template>
-    <h1>projeler gardas</h1>
+    <h1 class="text-moss">Projects</h1>
 
     <table class="table">
         <thead>
@@ -17,10 +17,10 @@
             <td>{{ project.description }}</td>
             <td>{{ project.type }}</td>
             <td>
-                <button type="button" class="btn btn-primary" @click="showModal(project);">
+                <button type="button" class="btn bg-payne text-white" @click="showModal(project);">
                     Edit
                 </button>
-                <button class="btn btn-danger" @click="deleteProject(project)">Delete</button>
+                <button class="btn bg-raspberry text-white" @click="deleteProject(project)">Delete</button>
             </td>
         </tr>
         </tbody>
