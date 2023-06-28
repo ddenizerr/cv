@@ -31,7 +31,7 @@ class ProjectController extends Controller
     public function fetch(): JsonResponse
     {
         $projects = Project::all();
-        return response()->json(['projects'=>$projects]);
+        return response()->json(['projects' => $projects]);
     }
 
     /**
@@ -55,7 +55,7 @@ class ProjectController extends Controller
             'type' => $request->type,
         ]);
 
-        return response()->json(['message'=>'Project details updated']);
+        return response()->json(['message' => 'Project details updated']);
     }
 
     /**
@@ -63,6 +63,13 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request): Application|Redirector|\Illuminate\Contracts\Foundation\Application|RedirectResponse
     {
+
+        //set the image name accor. to project name
+        $imagePath = storage_path('project-images') . '/' . $request->title . '.' . $request->file('image')->extension();
+        dd($imagePath);
+        //store to storage folder
+        $request->file('image')->storeAs('/storage-images', $imagePath);
+
         Project::create($request->all());
         return redirect('/projects');
     }
@@ -74,6 +81,6 @@ class ProjectController extends Controller
     public function delete(Project $project): JsonResponse
     {
         $project->delete();
-        return response()->json(['message'=>'Project is deleted!']);
+        return response()->json(['message' => 'Project is deleted!']);
     }
 }

@@ -31,7 +31,7 @@
             <input name="type" class="form-control" id="project-type" placeholder="Type of project">
         </div>
         <div class="form-group col-md-12 mb-2">
-            <label class="form-label text-moss" for="image">Showcase Image</label>
+            <label class="form-label text-moss" for="image_path">Showcase Image</label>
             <input type="file" class="form-control" id="image" name="image"/>
         </div>
     </div>
