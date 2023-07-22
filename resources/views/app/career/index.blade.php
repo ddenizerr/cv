@@ -10,7 +10,6 @@
                 @include('app.components.gallery')
             </div>
             <div class="col-lg-12">
-                <h5>Work Experience</h5>
 
             {{--TIMELINE--}}
                 <div class="container">

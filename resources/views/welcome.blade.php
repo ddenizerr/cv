@@ -40,7 +40,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item fw-bold">
                     <a class="nav-link " aria-current="page" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
