@@ -32,7 +32,7 @@
         </div>
         <div class="form-group col-md-12 mb-2">
             <label class="form-label text-moss" for="image_path">Showcase Image</label>
-            <input type="file" class="form-control" id="image" name="image"/>
+            <input type="file" class="form-control" id="image" name="image" accept=".jpeg, .png ,.jpg"/>
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Save</button>

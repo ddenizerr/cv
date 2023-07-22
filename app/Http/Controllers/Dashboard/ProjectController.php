@@ -11,6 +11,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Storage;
 use function redirect;
 use function response;
 use function view;
@@ -64,13 +65,32 @@ class ProjectController extends Controller
     public function store(StoreProjectRequest $request): Application|Redirector|\Illuminate\Contracts\Foundation\Application|RedirectResponse
     {
 
-        //set the image name accor. to project name
-        $imagePath = storage_path('project-images') . '/' . $request->title . '.' . $request->file('image')->extension();
-        dd($imagePath);
-        //store to storage folder
-        $request->file('image')->storeAs('/storage-images', $imagePath);
+//        $banner = $request->file('custom_banner');
+//        $path = Storage::putFileAs('/images/events', $banner, $banner->getClientOriginalName());
+//
+//        $name = explode('.', $banner->getClientOriginalName());
+//        $name = $name[0];
+//
+//        $image = Image::create([
+//            'name' => $name,
+//            'type' => 'event',
+//            'path' => '/storage/'.$path,
+//            ]);
 
-        Project::create($request->all());
+        $image = $request->file('image');
+
+        //set the image name accor. to project name
+        $imageName = $request->title . '.' . $request->file('image')->extension();
+
+        //store image at the related directory
+        $path = Storage::putFileAs('/project-images', $image, $imageName);
+
+        Project::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'type'=> $request->type,
+            'image_path' => $path,
+        ]);
         return redirect('/projects');
     }
 

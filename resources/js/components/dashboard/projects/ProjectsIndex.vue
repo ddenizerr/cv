@@ -7,6 +7,7 @@
             <th scope="col">#</th>
             <th scope="col">First</th>
             <th scope="col">Last</th>
+            <th scope="col">Image</th>
             <th scope="col">Handle</th>
         </tr>
         </thead>
@@ -16,6 +17,7 @@
             <th>{{ project.title }}</th>
             <td>{{ project.description }}</td>
             <td>{{ project.type }}</td>
+            <td>{{ project.image_path }}</td>
             <td>
                 <button type="button" class="btn bg-teal text-white" @click="showModal(project);">
                     Edit

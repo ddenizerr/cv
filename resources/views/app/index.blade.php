@@ -11,7 +11,7 @@
     <div class="row">
         @include('app.components.nav-cards')
     </div>
-    <div class="row mt-4">
+    <div class="row p-4 mt-4">
         @include('app.components.quote')
     </div>
 

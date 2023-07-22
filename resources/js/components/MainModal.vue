@@ -24,6 +24,10 @@
                             <input name="type" class="form-control" id="project-type" placeholder="Type of project"
                                    v-model="selectedProject.type">
                         </div>
+                        <div class="form-group col-md-12 mb-2 p-1">
+                            <label class="text-moss" for="project-type">Project Image</label>
+                            <input type="file" name="file" class="form-control" id="project-image" accept=".jpeg, .png, .jpg" >
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -61,6 +65,7 @@ export default {
                 title: this.selectedProject.title,
                 description: this.selectedProject.description,
                 type: this.selectedProject.type,
+                image_path:this.selectedProject.image_path,
             }).then(response => {
                 this.$parent.fetchProject();
             }).catch(error => {

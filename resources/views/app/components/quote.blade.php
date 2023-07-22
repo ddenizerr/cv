@@ -1,4 +1,4 @@
-<div class="row p-3 bg-payne mb-2 rounded p-3 d-flex justify-content-center">
+<div class="row p-3 bg-payne mb-2 rounded p-4 d-flex justify-content-center">
 
     <h6 class="text-moss"> Quote of the Day</h6>
     <p class="quote text-white">
