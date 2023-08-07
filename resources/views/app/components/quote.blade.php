@@ -6,7 +6,7 @@
 
     </p>
     <div class="row d-flex justify-content-end">
-    <span class=" fs-5 text-" > - Mustafa Denizer</span>
+    <span class=" fs-5 fw-lighter"> Mustafa Denizer </span>
 
     </div>
 

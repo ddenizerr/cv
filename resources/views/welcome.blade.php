@@ -27,7 +27,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid navbar-custom navbar-shadow ">
         <a class="navbar-brand navbar-colors text-center" href="{{route('home.index')}}"><img class="navbar-brand-logo"
-                                                                                              src="/images/Deniz Denizer.png"
+                                                                                              src="/images/denizdenizer-narrow-purple.png"
                                                                                               alt="Deniz Denizer"></a>
         <div class="d-flex flex-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,15 +40,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item fw-bold">
+                <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('career.index')}}">Career</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">Blog</a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link">Blog</a>--}}
+{{--                </li>--}}
             </ul>
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">

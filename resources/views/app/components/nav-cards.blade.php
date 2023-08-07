@@ -14,7 +14,7 @@
 {{--        </a>--}}
 {{--    </div>--}}
 
-    <div class="col-lg-4 col-md-12 col-sm-12 pb-1">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 pb-1">
         <a {{-- href="#" --}} class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">
@@ -29,7 +29,7 @@
         </a>
     </div>
 
-    <div class="col-lg-4 col-md-12 col-sm-12 pb-1">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 pb-1">
         <a href="{{route('career.index')}}" class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">
