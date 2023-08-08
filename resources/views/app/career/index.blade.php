@@ -2,16 +2,13 @@
 
 @section('content')
         <div class="row font-cinzel mb-4 index-title">
-            <h1 class="text-moss"> My Career</h1>
+            <h1 class="mb-2"> My Career</h1>
 {{--            <div class="col-lg-6">--}}
 {{--                <Projects></Projects>--}}
 {{--            </div>--}}
             <div class="col-lg-12">
-                @include('app.components.gallery')
-            </div>
-            <div class="col-lg-12">
 
-            {{--TIMELINE--}}
+                {{--TIMELINE--}}
                 <div class="container">
                     <div class="main-timeline">
 
@@ -118,5 +115,9 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-12">
+                @include('app.components.gallery')
+            </div>
+
         </div>
 @endsection

@@ -24,11 +24,11 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body class="main-body">
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid navbar-custom navbar-shadow ">
-        <a class="navbar-brand navbar-colors text-center" href="{{route('home.index')}}"><img class="navbar-brand-logo"
-                                                                                              src="/images/denizdenizer-narrow-purple.png"
-                                                                                              alt="Deniz Denizer"></a>
+<nav class="navbar navbar-expand-lg mb-5">
+    <div class="container-fluid fixed-top navbar-custom navbar-shadow ">
+        <a class="navbar-brand navbar-colors text-center " href="{{route('home.index')}}"><img class="navbar-brand-logo"
+                                                                                               src="/images/denizdenizer-narrow-purple.png"
+                                                                                               alt="Deniz Denizer"></a>
         <div class="d-flex flex-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -41,18 +41,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">About Me</a>
+                    <a class="nav-link " aria-current="page" href="{{route('about.index')}}">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('career.index')}}">Career</a>
                 </li>
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link">Blog</a>--}}
-{{--                </li>--}}
             </ul>
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Contact Me</a>
+                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>
                 </li>
             </ul>
         </div>
@@ -70,17 +67,17 @@
 </div>
 
 <div class="d-flex flex-end mt-2">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-cream">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
         <div class="col-lg-4 d-flex align-items-center mx-3">
             <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
         </div>
         <div class="col-lg-4">
             <ul class="nav justify-content-end list-unstyled d-flex mx-3">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram social-color"></i></a>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_curlydeveloper/"><i class="fa-brands fa-instagram social-color"></i></a>
                 </li>
-                <li class="ms-3"><a class="text-muted" href="#"><i
+                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ddenizer"><i
                             class="fa-brands fa-linkedin-in social-color"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-github social-color"></i></a>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/ddenizerr"><i class="fa-brands fa-github social-color"></i></a>
                 </li>
             </ul>
         </div>

@@ -24,3 +24,9 @@ Route::prefix('contact')->name('contact.')->group(function () {
         Route::get('', 'index')->name('index');
     });
 });
+
+Route::prefix('about')->name('about.')->group(function () {
+    Route::controller(PagesController::class)->group(function () {
+        Route::get('', 'indexAboutMe')->name('index');
+    });
+});
