@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<div class="d-flex flex-end mt-2">
+<div class="d-flex flex-end mt-5">
     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
         <div class="col-lg-4 d-flex align-items-center mx-3">
             <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>

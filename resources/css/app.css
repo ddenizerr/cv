@@ -245,6 +245,10 @@ footer {
     color: var(--midnight-moss);
 }
 
+.social-color:hover{
+    color: var(--onyx);
+}
+
 /*CAREER*/
 
 .block-project-image {

@@ -48,4 +48,11 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            @include('app.components.nav-cards')
+        </div>
+    </div>
+
 @endsection

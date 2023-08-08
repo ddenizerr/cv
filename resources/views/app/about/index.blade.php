@@ -8,7 +8,7 @@
                 <img class="about-me-image" src="/images/aboutmeimage.png" alt="about me image"/>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 ">
                 <span class="text-onyx font-noto fs-6"> Software Developer originated from Cyprus. </span>
                 <span class="fs-3 text-onyx font-noto"> I love traveling, photography and deep conversations about mental
             health!</span>
@@ -20,11 +20,12 @@
                          <p class="font-noto text-darkgreen">Ireland   <img class="icon-ireland"
                                                                            src="/images/ireland.png" alt="">   </p>
                     </span>
-
             </div>
-
         </div>
 
+        <div class="row">
+            @include('app.components.nav-cards')
+        </div>
 
     </div>
 @endsection
