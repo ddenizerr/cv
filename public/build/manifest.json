@@ -1,0 +1,16 @@
+{
+  "public/images/scales.png": {
+    "file": "assets/scales-7eb460d6.png",
+    "src": "public/images/scales.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-282c1fd0.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-c8763d6f.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
