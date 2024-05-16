@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <h5 class="title">Full Stack Developer @ Apple</h5>
+                            <h5 class="title">Software Developer @ Apple</h5>
                             <p class="description font-noto text-onyx fs-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa
                                 scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <h5 class="title">Backend Developer @ CIU </h5>
+                            <h5 class="title">Sofware Developer @ CIU </h5>
                             <p class="description font-noto text-onyx fs-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa
                                 scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur.

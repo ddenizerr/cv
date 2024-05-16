@@ -1,11 +1,10 @@
 @extends('welcome')
 
 @section('content')
-    <div class="row font-cinzel mb-4 d-flex align-items-center">
-        <h1 class="text-onyx"> DENIZ DENIZER </h1>
+    <div class="row font-handwriting mb-4 d-flex align-items-center">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
-                <img class="about-me-image" src="/images/aboutmeimage.png" alt="about me image"/>
+                <img class="about-me-image" src="/images/deniz-memoji.jpeg" alt="about me image"/>
             </div>
 
             <div class="col-md-6 ">
@@ -14,11 +13,12 @@
             health!</span>
                 <span class="fs-5 font-noto text-onyx"> I love all animals! </span>
                 <span class="fs-6 font-noto text-onyx"> I love to play drums, sing and play piano.</span>
+                <span class="fs-5 font-noto text-onyx"> Natural social event planner and party starter! </span>
             </div>
             <div class="col-md-12 d-flex justify-content-end">
    <span class="text-onyx font-handwriting fs-3"> Currently at:
-                         <p class="font-noto text-darkgreen">Ireland   <img class="icon-ireland"
-                                                                           src="/images/ireland.png" alt="">   </p>
+                         <span class="font-noto text-darkgreen">Cork IE <img class="icon-ireland"
+                                                                          src="/images/ireland.png" alt="irish-flag"> </span>
                     </span>
             </div>
         </div>

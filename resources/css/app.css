@@ -549,7 +549,7 @@ footer {
     .main-timeline .timeline:nth-child(2n) .timeline-content {
         width: 105%;
         text-align: center;
-        padding: 10px 0px
+        padding: 10px 0;
     }
 
     .main-timeline .title {
@@ -576,8 +576,8 @@ footer {
 /*ABOUT ME*/
 
 .about-me-image{
-    width:100%;
-    height:100%;
+    width:80%;
+    height:80%;
     object-fit: contain;
 }
 
