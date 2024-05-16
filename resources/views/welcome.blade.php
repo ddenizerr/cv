@@ -47,11 +47,11 @@
                     <a class="nav-link" href="{{route('career.index')}}">Career</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>
-                </li>
-            </ul>
+{{--            <ul class="navbar-nav mx-auto">--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
         </div>
     </div>
 </nav>
