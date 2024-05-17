@@ -47,46 +47,57 @@
                     <a class="nav-link" href="{{route('career.index')}}">Career</a>
                 </li>
             </ul>
-{{--            <ul class="navbar-nav mx-auto">--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>--}}
-{{--                </li>--}}
-{{--            </ul>--}}
+            {{--            <ul class="navbar-nav mx-auto">--}}
+            {{--                <li class="nav-item">--}}
+            {{--                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>--}}
+            {{--                </li>--}}
+            {{--            </ul>--}}
         </div>
     </div>
 </nav>
-
-<div class="container">
-    <div class="row d-flex justify-content-center" id="app">
-
-        <div class="col-lg-9">
-            @yield('content')
+    @if(isset($backgroundImageFromView))
+    <div class="container" style="background-image: url({{$backgroundImageFromView}})">
+        <div class="row d-flex justify-content-center" id="app">
+            @yield('content', ['backgroundImage' => $backgroundImageFromView])
         </div>
-
     </div>
-</div>
 
-<div class="d-flex flex-end mt-5">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
-        <div class="col-lg-4 d-flex align-items-center mx-3">
-            <span class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
-        </div>
-        <div class="col-lg-4">
-            <ul class="nav justify-content-end list-unstyled d-flex mx-3">
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_curlydeveloper/"><i class="fa-brands fa-instagram social-color"></i></a>
-                </li>
-                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ddenizer"><i
-                            class="fa-brands fa-linkedin-in social-color"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://github.com/ddenizerr"><i class="fa-brands fa-github social-color"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    @else
+    <div class="container">
+        <div class="row d-flex justify-content-center" id="app">
+            <div class="col-lg-9">
+                @yield('content')
+            </div>
+        </div>
+    </div>
+    @endif
+
+
+        <div class="d-flex flex-end mt-5">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
+                <div class="col-lg-4 d-flex align-items-center mx-3">
+                    <span
+                        class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="nav justify-content-end list-unstyled d-flex mx-3">
+                        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_curlydeveloper/"><i
+                                    class="fa-brands fa-instagram social-color"></i></a>
+                        </li>
+                        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ddenizer"><i
+                                    class="fa-brands fa-linkedin-in social-color"></i></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://github.com/ddenizerr"><i
+                                    class="fa-brands fa-github social-color"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
 
 </body>
 </html>

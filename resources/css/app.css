@@ -1,7 +1,7 @@
 /*ROOT*/
 :root {
     --midnight-moss: #7D62F4;
-    --slate-blue: #826AED;
+    --slate-purple: #826AED;
     --aqua-haze: #eef5f0;
     --pale-mist: #f1ecf3;
     --mist-white: #f1f1f1ff;
@@ -30,7 +30,7 @@
 }
 
 .text-slate-blue {
-    color: var(--slate-blue);
+    color: var(--slate-purple);
 }
 
 .text-onyx {
@@ -46,7 +46,7 @@
 }
 
 .bg-slate {
-    background-color: var(--slate-blue);
+    background-color: var(--slate-purple);
 }
 
 .bg-raspberry {
@@ -127,7 +127,7 @@ vr {
 }
 
 .navbar-custom {
-    background-color: var(--slate-blue);
+    background-color: var(--slate-purple);
     border-bottom: 1px solid var(--mist-white);
     font-family: var(--cinzel-font-family);
 }

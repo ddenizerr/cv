@@ -1,13 +1,14 @@
 @extends('welcome')
 
 @section('content')
-    <div class="row font-cinzel mb-4 index-title">
-        <h1 class="mb-2"> My Career</h1>
+    <div class="row mb-4 index-title">
+        <h1 class="mb-2 font-handwriting"> My Career</h1>
         {{--            <div class="col-lg-6">--}}
         {{--                <Projects></Projects>--}}
         {{--            </div>--}}
         <div class="col-lg-12">
 
+{{--            <a href="{{route('home.downloadPDF')}}">CV</a>--}}
             {{--TIMELINE--}}
             <div class="container">
                 <div class="main-timeline">

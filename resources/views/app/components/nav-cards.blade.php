@@ -15,7 +15,7 @@
 {{--    </div>--}}
 
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 pb-1">
-        <a {{-- href="#" --}} class="disabled text-decoration-none">
+        <a href="{{route('about.index')}}" class="disabled text-decoration-none">
             <div class="card glow bg-aqua">
                 <div class="card-body">
                     <div class="card-title">

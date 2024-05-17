@@ -1,7 +1,9 @@
 @extends('welcome')
 
 @section('content')
-    <div class="row font-handwriting mb-4 d-flex align-items-center">
+
+
+    <div class="row mb-4 d-flex align-items-center">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
                 <img class="about-me-image" src="/images/deniz-memoji.jpeg" alt="about me image"/>
