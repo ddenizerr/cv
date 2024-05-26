@@ -21,8 +21,7 @@
 /*BODY*/
 .main-body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--white);
-    color: var(--pale-mist);
+    background-color: var(--pale-mist);
 }
 
 .text-moss {
@@ -122,13 +121,9 @@ vr {
     margin-bottom: 90px !important;
 }
 
-.navbar-shadow {
-    box-shadow: 0 5px 10px -9px var(--mist-white);
-}
-
 .navbar-custom {
-    background-color: var(--slate-purple);
-    border-bottom: 1px solid var(--mist-white);
+    background-color: var(--pale-mist);
+    border: none;
     font-family: var(--cinzel-font-family);
 }
 
@@ -143,19 +138,15 @@ vr {
     height: 4rem;
 }
 
-.navbar-toggler-icon {
-    color: var(--mist-white) !important;
-}
-
-.nav-link {
-    color: var(--mist-white);
-}
-
 .nav-link:hover {
     color: var(--onyx);
 }
 
 /*FONTS*/
+.font-better {
+    font-family: 'Better Saturday', serif;
+}
+
 .font-playfair {
     font-family: 'Playfair Display', serif;
 }
@@ -172,7 +163,13 @@ vr {
     font-family: var(--hand-writing-font-family);
 }
 
-.glow:hover {
+.glow{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow-card:hover{
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
@@ -180,11 +177,18 @@ vr {
 
 @-webkit-keyframes glow {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+        box-shadow: var(--pale-mist) var(--pale-mist) 10px #fff, var(--pale-mist) var(--pale-mist) 20px #fff, var(--pale-mist) var(--pale-mist) 30px #fff, var(--pale-mist) var(--pale-mist) 40px #fff;
     }
     to {
         box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--midnight-moss);
     }
+}
+
+/* TEXT */
+
+.text-center-align{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*CARDS*/
@@ -193,13 +197,22 @@ vr {
     border: none;
     border-radius: 20px;
     outline: none;
-    box-shadow: 0 0 10px var(--midnight-moss);
-    height: auto;
-    background-color: var(--midnight-moss);
+    height: 30rem;
+}
+
+
+
+.card-deck{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.character-card{
+    flex: 1 0 auto;
 }
 
 .card-title {
-    color: #fff;
     font-size: 1.5rem;
     text-align: center;
     padding: 0.5rem;
@@ -208,14 +221,19 @@ vr {
 
 .card-title-text {
     font-size: 1.5rem;
-    color: var(--aqua-haze)
 }
 
 .card-text {
     text-align: left;
     padding: 0.5rem;
-    color: var(--aqua-haze);
     font-size: 0.8rem;
+}
+
+.card-avatar {
+    vertical-align: middle;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
 }
 
 /*FOOTER*/

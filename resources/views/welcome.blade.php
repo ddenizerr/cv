@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>Deniz Denizer</title>
+    <link rel="icon" href="/images/favicon-transparent.png" type="image/png" sizes="192x192">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
 <nav class="navbar navbar-expand-lg mb-5">
     <div class="container-fluid fixed-top navbar-custom navbar-shadow ">
         <a class="navbar-brand navbar-colors text-center " href="{{route('home.index')}}"><img class="navbar-brand-logo"
-                                                                                               src="/images/denizdenizer-narrow-purple.png"
+                                                                                               src="/images/navbar-hero-transparent.png"
                                                                                                alt="Deniz Denizer"></a>
         <div class="d-flex flex-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,66 +39,57 @@
         </div>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav text-decoration-none">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{{route('about.index')}}">About Me</a>
+                    <a class="nav-link text-onyx  " aria-current="page" href="{{route('about.index')}}">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('career.index')}}">Career</a>
+                    <a class="nav-link text-onyx" href="{{route('career.index')}}">Career</a>
                 </li>
             </ul>
-            {{--            <ul class="navbar-nav mx-auto">--}}
-            {{--                <li class="nav-item">--}}
-            {{--                    <a class="nav-link " aria-current="page" href="{{route('contact.index')}}">Contact Me</a>--}}
-            {{--                </li>--}}
-            {{--            </ul>--}}
+{{--            <ul class="navbar-nav mx-auto">--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link " aria-current="page" href="">Contact Me</a>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
         </div>
     </div>
 </nav>
-    @if(isset($backgroundImageFromView))
-    <div class="container" style="background-image: url({{$backgroundImageFromView}})">
-        <div class="row d-flex justify-content-center" id="app">
-            @yield('content', ['backgroundImage' => $backgroundImageFromView])
+
+<div class="container">
+    <div class="row" id="app">
+        <div class="d-flex justify-content-center">
+            @yield('content')
         </div>
     </div>
+</div>
 
 
-    @else
-    <div class="container">
-        <div class="row d-flex justify-content-center" id="app">
-            <div class="col-lg-9">
-                @yield('content')
-            </div>
-        </div>
-    </div>
-    @endif
-
-
-        <div class="d-flex flex-end mt-5">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
-                <div class="col-lg-4 d-flex align-items-center mx-3">
+<div class="d-flex flex-end mt-5">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top mt-1 bg-white">
+        <div class="col-lg-4 d-flex align-items-center mx-3">
                     <span
                         class="font-cinzel footer-text-size">Deniz Denizer {{\Illuminate\Support\Carbon::now()->year}}</span>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="nav justify-content-end list-unstyled d-flex mx-3">
-                        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_curlydeveloper/"><i
-                                    class="fa-brands fa-instagram social-color"></i></a>
-                        </li>
-                        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ddenizer"><i
-                                    class="fa-brands fa-linkedin-in social-color"></i></a></li>
-                        <li class="ms-3"><a class="text-muted" href="https://github.com/ddenizerr"><i
-                                    class="fa-brands fa-github social-color"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
         </div>
+        <div class="col-lg-4">
+            <ul class="nav justify-content-end list-unstyled d-flex mx-3">
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_curlydeveloper/"><i
+                            class="fa-brands fa-instagram social-color"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/ddenizer"><i
+                            class="fa-brands fa-linkedin-in social-color"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/ddenizerr"><i
+                            class="fa-brands fa-github social-color"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-                crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
