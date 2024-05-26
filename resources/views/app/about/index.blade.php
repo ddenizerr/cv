@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <div class="row mb-4 d-flex align-items-center">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
@@ -20,13 +19,9 @@
             <div class="col-md-12 d-flex justify-content-end">
    <span class="text-onyx font-handwriting fs-3"> Currently at:
                          <span class="font-noto text-darkgreen">Cork IE <img class="icon-ireland"
-                                                                          src="/images/ireland.png" alt="irish-flag"> </span>
+                                                                             src="/images/ireland.png" alt="irish-flag"> </span>
                     </span>
             </div>
-        </div>
-
-        <div class="row">
-            @include('app.components.nav-cards')
         </div>
 
     </div>

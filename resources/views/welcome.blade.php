@@ -24,7 +24,7 @@
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="main-body">
+<body class="main-body ">
 <nav class="navbar navbar-expand-lg mb-5">
     <div class="container-fluid fixed-top navbar-custom navbar-shadow ">
         <a class="navbar-brand navbar-colors text-center " href="{{route('home.index')}}"><img class="navbar-brand-logo"
@@ -59,7 +59,7 @@
 
 <div class="container">
     <div class="row" id="app">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex align-content-center">
             @yield('content')
         </div>
     </div>

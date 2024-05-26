@@ -8,7 +8,7 @@
         {{--            </div>--}}
         <div class="col-lg-12">
 
-{{--            <a href="{{route('home.downloadPDF')}}">CV</a>--}}
+            {{--            <a href="{{route('home.downloadPDF')}}">CV</a>--}}
             {{--TIMELINE--}}
             <div class="container">
                 <div class="main-timeline">
@@ -130,13 +130,6 @@
         <div class="col-lg-12">
             @include('app.components.gallery')
         </div>
-
-        <div class="col-lg-12">
-            @include('app.components.nav-cards')
-        </div>
-
-
     </div>
-
 
 @endsection

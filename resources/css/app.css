@@ -236,6 +236,12 @@ vr {
     border-radius: 50%;
 }
 
+
+.carousel .carousel-indicators button {background-color: var(--slate-purple);}
+.carousel-indicators > button{
+color: #1a202c !important;
+}
+
 /*FOOTER*/
 
 footer {
