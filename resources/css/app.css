@@ -48,6 +48,10 @@
     background-color: var(--slate-purple);
 }
 
+.purple-portrait-background{
+    background-color: var(--dark-green-teal) !important;
+}
+
 .bg-raspberry {
     background-color: var(--raspberry);
 }
@@ -610,3 +614,11 @@ footer {
     width: 20px;
     display: compact;
 }
+
+.avatar-subtext{
+    width:28rem;
+    height: 7rem;
+    top: 20rem;
+    background: linear-gradient(100deg, #eeedf1, #7b61e9);
+}
+
