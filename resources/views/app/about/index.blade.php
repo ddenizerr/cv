@@ -2,6 +2,8 @@
 
 @section('content')
 
+    @include('app.components.ig-profile')
+
     <div class="row mb-4 d-flex align-items-center">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
