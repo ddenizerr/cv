@@ -4,12 +4,12 @@
     "src": "public/images/scales.png"
   },
   "resources/css/app.css": {
-    "file": "assets/app-121dd73d.css",
+    "file": "assets/app-c47ef12f.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-2ccd7583.js",
+    "file": "assets/app-c8763d6f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
