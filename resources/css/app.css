@@ -619,6 +619,34 @@ footer {
     width:28rem;
     height: 7rem;
     top: 20rem;
-    background: linear-gradient(100deg, #eeedf1, #7b61e9);
+    background: linear-gradient(to right, rgb(131, 110, 229), rgb(231, 226, 232),rgb(131, 110, 229));
+    background-size: 300% 300%;
+    animation: color 5s ease-in-out infinite;
 }
 
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0;
+    }
+}
+
+.instagram-embed-container {
+    max-width: 450px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the embed */
+}
+
+.instagram-embed-container .instagram-media {
+    width: 100% !important;
+    height: 445px; /* Adjust the height as needed */
+}
+
+.arrow-flipped-horizontal{
+    /*-webkit-transform: scaleX(-1);*/
+    transform: scaleX(-1);
+}
