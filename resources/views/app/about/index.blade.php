@@ -3,7 +3,6 @@
 @section('content')
 
     <div class="d-flex flex-column mb-5">
-
         {{--        avatar--}}
         <div class="d-flex flex-row" style="height: 15rem; padding-left:7rem; padding-right: 7rem">
             <div class="col-6 d-flex align-items-center justify-content-center flex-nowrap p-4">
@@ -15,15 +14,15 @@
             </div>
             <div class="col-6 d-flex align-items-center justify-content-center">
                 <div class="position-absolute">
-                    <img class="z-0" src="/images/about-me-avatar.png" alt="" style="width:27rem; height: 27rem">
-                                        <span
-                                            class="z-3 position-absolute start-50 translate-middle-x font-playfair fs-5 text-white p-4 text-center rounded-4 avatar-subtext">
+                    <img class="z-0" src="/images/deniz-irish-memoji.png" alt="" style="width:20rem; height: 20rem">
+                    <span
+                        class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x font-better p-4 text-center rounded-4 ">
                                         Traveler, deep conservationist, 🐶 & 🐱 lover, photographer, and all others...
-                                    </span>
+                    </span>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-end align-items-center">
+        <div class="d-flex justify-content-end align-items-center mt-5 ">
             <img style="height: 25rem" src="/images/arrow-right-down.png" alt="">
         </div>
 
@@ -45,8 +44,8 @@
             </div>
         </div>
 
-        <div class="z-1 d-flex justify-content-start align-items-center">
-            <div class="arrow-flipped-horizontal">
+        <div class="z-1 d-flex justify-content-start align-items-center mt-5">
+            <div class="arrow-flipped-horizontal absolute">
                 <img style="height: 25rem" src="/images/arrow-right-down.png" alt="">
             </div>
         </div>

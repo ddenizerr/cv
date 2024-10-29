@@ -619,9 +619,9 @@ footer {
     width:28rem;
     height: 7rem;
     top: 20rem;
-    background: linear-gradient(to right, rgb(131, 110, 229), rgb(231, 226, 232),rgb(131, 110, 229));
+    font-size: 15pt;
+    line-height: 1.2;
     background-size: 300% 300%;
-    animation: color 5s ease-in-out infinite;
 }
 
 @keyframes color {
