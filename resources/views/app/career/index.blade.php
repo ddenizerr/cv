@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row mb-4 index-title">
-        <h1 class="mb-2 font-handwriting"> My Career</h1>
+        <h1 class="mb-2 font-playfair text-moss"> My Career</h1>
         {{--            <div class="col-lg-6">--}}
         {{--                <Projects></Projects>--}}
         {{--            </div>--}}
@@ -19,13 +19,13 @@
                         <div class="date-content">
                             <div class="date-outer">
                                     <span class="date">
-                                            <span class="month text-onyx">Current</span>
+                                            <span class="month">Current</span>
                                     <span class="year text-onyx">2023</span>
                                     </span>
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <h5 class="title">Software Developer @ Apple</h5>
+                            <h5 class="title font-cinzel">Software Developer @ Apple</h5>
                             <p class="description font-noto text-onyx fs-6">
                                 - Drive software development and project management across Cork and Distribution Centres, proactively managing the Shop Floor System to support high-volume manufacturing operations.
                                 <br>
@@ -110,15 +110,13 @@
                         </div>
                     </div>
                     <!-- end experience section-->
-
-
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-12">
-            @include('app.components.gallery')
-        </div>
+{{--        <div class="col-lg-12">--}}
+{{--            @include('app.components.gallery')--}}
+{{--        </div>--}}
     </div>
 
 @endsection
