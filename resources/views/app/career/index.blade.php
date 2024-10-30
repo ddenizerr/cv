@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <h5 class="title">  Software Developer Engineer @ Analiz Systems	</h5>
+                            <h5 class="title">  Software Engineer Intern @ Analiz Systems	</h5>
                             <p class="description font-noto text-onyx fs-6">
                                 - Designed and implemented a phone book application with CRUD operations, gaining practical experience in C# and .NET frameworks.
                                 <br>
