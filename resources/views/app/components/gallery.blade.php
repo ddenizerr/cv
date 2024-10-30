@@ -15,7 +15,7 @@
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <img
-                        src="/images/team/dp_world_team.jpg"
+                        src="/images/team/dp_world_team.jpeg"
                         class="w-100  h-60 shadow-1-strong rounded mb-4"
                         alt="vendor team selfie"
                             />
