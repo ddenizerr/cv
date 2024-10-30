@@ -16,8 +16,8 @@
                 <div class="position-absolute">
                     <img class="z-0" src="/images/deniz-irish-memoji.png" alt="" style="width:20rem; height: 20rem">
                     <span
-                        class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x font-better p-4 text-center rounded-4 ">
-                                        Traveler, deep conservationist, 🐶 & 🐱 lover, photographer, and all others...
+                        class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x p-4 text-center rounded-4 ">
+                                        Traveler, deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
                     </span>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                         <span style="font-size: 4rem; margin-left: 2rem">Traveller</span>
                     </h1>
                     <span>
-                        ultricies tempus sadipscing at honestatis vix duis no mentitum luptatum vivendo instructior leo felis omittantur melius cras explicari pericula mi eget aenean menandri possim accumsan molestiae quot referrentur natoque errem maiorum electram falli delicata maiestatis neglegentur intellegat aliquip suas melius etiam possit proin postea ludus reformidans fuisset magna libris viverra
+                        We live on this planet and we need to explore every one bit of it! And I only discovered 10% of it so way more to go! 🌍
                     </span>
                 </div>
             </div>
