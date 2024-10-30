@@ -35,7 +35,7 @@
                             />
 
                     <img
-                        src="/images/team/game_on_grass.jpeg"
+                        src="/images/team/huseyin_gardas.jpeg"
                         class="w-100  h-50 shadow-1-strong rounded mb-4"
                         alt="day out on playing games on grass"
                             />
