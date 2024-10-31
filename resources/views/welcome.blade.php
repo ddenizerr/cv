@@ -7,7 +7,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Deniz Denizer">
     <meta property="og:description" content="Visit denizdenizer.me to explore my world.">
-    <meta property="og:image" content="{{ asset('images/navbar-hero-transparent.png') }}">
+    <meta property="og:image" content="{{ asset('/public/images/navbar-hero-transparent.png') }}">
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:type" content="website">
 

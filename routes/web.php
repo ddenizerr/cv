@@ -15,6 +15,12 @@ Route::middleware(['block.mobile'])->group(function () {
         Route::delete('/{project}/delete', 'delete')->name('delete');
     });
 
+    Route::get('/download-cv', function () {
+        $filePath = public_path('/cv/denizdenizer.pdf');
+        return response()->download($filePath);
+    })->name('download-cv');
+
+
     include('application.php');
 });
 

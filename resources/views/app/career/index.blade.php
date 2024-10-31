@@ -114,7 +114,12 @@
             </div>
         </div>
 
-{{--        <div class="col-lg-12">--}}
+        <div class="mt-5 d-grid">
+            <a href="{{ route('download-cv') }}" class="btn bg-moss text-white">Download My CV</a>
+        </div>
+
+
+        {{--        <div class="col-lg-12">--}}
 {{--            @include('app.components.gallery')--}}
 {{--        </div>--}}
     </div>
