@@ -126,7 +126,7 @@ vr {
 }
 
 .navbar-custom {
-    background-color: var(--pale-mist);
+    background-color: transparent;
     border: none;
     font-family: var(--cinzel-font-family);
 }
