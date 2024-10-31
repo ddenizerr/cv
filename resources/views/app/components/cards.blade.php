@@ -38,8 +38,7 @@
                 <div class="card glow-card">
                     <div class="card-body ">
                         <div class="card-title">
-                            <h4 class="card-title-text font-cinzel"><i
-                                    class="fa-solid fa-feather fa-shake"></i>
+                            <h4 class="card-title-text font-cinzel"><i class="fa-solid fa-briefcase fa-bounce"></i>
                                 Corporate</h4>
                         </div>
                         <div class="row d-flex justify-content-center align-items-center">
