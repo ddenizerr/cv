@@ -650,3 +650,32 @@ footer {
     /*-webkit-transform: scaleX(-1);*/
     transform: scaleX(-1);
 }
+
+/* Default size adjustments for larger screens */
+.who-dat-large {
+    font-size: 5rem;
+}
+.who-dat-xl {
+    font-size: 8rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .who-dat-large {
+        font-size: 3rem; /* Adjust size for tablets */
+    }
+    .who-dat-xl {
+        font-size: 4rem; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .who-dat-large {
+        font-size: 2rem; /* Adjust size for mobile phones */
+    }
+    .who-dat-xl {
+        font-size: 3rem; /* Adjust size for mobile phones */
+    }
+}
+
+

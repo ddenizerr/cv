@@ -3,7 +3,7 @@
 use App\Http\Controllers\Dashboard\ProjectController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['block.mobile'])->group(function () {
+//Route::middleware(['block.mobile'])->group(function () {
 
 //DASHBOARD
     Route::controller(ProjectController::class)->prefix('projects')->name('projects.')->group(function () {
@@ -22,6 +22,6 @@ Route::middleware(['block.mobile'])->group(function () {
 
 
     include('application.php');
-});
+//});
 
 
