@@ -14,7 +14,7 @@
             <img class="contact-me-image" src="/images/postbox.jpg" alt="">
         </div>
         <!-- Form -->
-        <div class="col-lg-8 col-md-8 col-sm-10 bg-white">
+        <div class="col-lg-8 col-md-8 col-sm-10">
             <h4 class="text-onyx font-handwriting">Get in touch!</h4>
             <div class="row">
                 <div class="p-1">
@@ -49,10 +49,10 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-            @include('app.components.nav-cards')
-        </div>
-    </div>
+{{--    <div class="row">--}}
+{{--        <div class="col-lg-12">--}}
+{{--            @include('app.components.nav-cards')--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 @endsection

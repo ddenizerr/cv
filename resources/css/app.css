@@ -88,6 +88,9 @@
     background-color: var(--pale-mist);
 }
 
+.bg-transparent{
+    background-color: transparent;
+}
 .index-title {
     margin-left: 1rem;
     font-size: 3rem;
