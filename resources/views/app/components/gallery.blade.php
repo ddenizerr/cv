@@ -29,7 +29,7 @@
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <img
-                        src="/images/team/bowling_night.jpeg"
+                        src="/images/team/bowling_night.jpg"
                         class="w-100 shadow-1-strong rounded mb-4"
                         alt="Team at bowling"
                             />

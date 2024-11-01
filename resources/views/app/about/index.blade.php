@@ -2,33 +2,29 @@
 
 @section('content')
 
-    <div class="d-flex flex-column mb-5">
+    <div class="container mt-5">
+        <div class="d-flex flex-column">
         {{--        avatar--}}
-        <div class="d-flex flex-row" style="height: 15rem; padding-left:7rem; padding-right: 7rem">
-            <div class="col-6 d-flex align-items-center justify-content-center flex-nowrap p-4">
-                <h1 class="flex-nowrap font-playfair text-moss">
-                    <span style="font-size: 4rem; margin-left: 2rem">Who dat?</span>
-                    <br>
-                    <span class="" style="font-size: 7rem;">Who dat?</span>
-                </h1>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
-                <div class="position-absolute">
-                    <img class="z-0" src="/images/deniz-irish-memoji.png" alt="" style="width:20rem; height: 20rem">
-                    <span
-                        class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x p-4 text-center rounded-4 ">
-                                        Traveler, deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
-                    </span>
+            <div class="row mb-5 p-4 align-items-center">
+                <div class="col-md-6 col-12 text-center p-4">
+                    <h1 class="font-playfair text-moss">
+                        <span class="d-block who-dat-large">Who dat?</span>
+                        <span class="who-dat-xl">Who dat?</span>
+                    </h1>
+                </div>
+                <div class="col-md-6 col-12 d-flex mb-2 align-items-center justify-content-center">
+                    <div class="position-relative">
+                        <img class="z-0 img-fluid" src="/images/deniz-irish-memoji.png" alt="Deniz Memoji">
+                        <span class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x p-4 text-center rounded-4 fs-6">
+                Traveler, deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
+            </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-end align-items-center mt-5 ">
-            <img style="height: 25rem" src="/images/arrow-right-down.png" alt="">
-        </div>
 
+            <hr class="my-4">
         {{--        traveller--}}
-        <div class="d-flex flex-row-reverse mb-3"
-             style="height: 10rem; padding-left:7rem; padding-right: 7rem">
+        <div class="row mt-5 p-4 align-items-center">
             <div class="d-flex justify-content-end">
                 <div class="row text-end g-3">
                     <h1 class="flex-nowrap font-playfair text-moss">
@@ -43,14 +39,9 @@
                 @include('app.components.instagram-post')
             </div>
         </div>
-
-        <div class="z-1 d-flex justify-content-start align-items-center mt-5">
-            <div class="arrow-flipped-horizontal absolute">
-                <img style="height: 25rem" src="/images/arrow-right-down.png" alt="">
-            </div>
-        </div>
+            <hr class="my-4">
         {{--        music--}}
-        <div class="d-flex flex-row mb-3" style="height: 15rem; padding-left:7rem; padding-right: 7rem">
+        <div class="row mt-5 p-4 align-items-center">
             <div class="d-flex justify-content-end">
                 <div class="row text-end">
                     <h1 class="flex-nowrap font-playfair text-moss">
@@ -75,16 +66,13 @@
                                                                        href="https://www.instagram.com/yagmurolmez87/">Yagmur
                                 Olmez</a> on the piano!</small></p>
                 </div>
+            </div>
+        </div>
 
-            </div>
-        </div>
-        <div class="z-1 d-flex justify-content-end align-items-end m-0 p-0">
-            <div class="">
-                <img style="height: 25rem" src="/images/arrow-right-down.png" alt="">
-            </div>
-        </div>
+            <hr class="my-4">
+
         {{-- people --}}
-        <div class="d-flex flex-row-reverse mb-5" style="height: 15rem; padding-left:7rem; padding-right: 7rem">
+        <div class="row mt-5 p-4 align-items-center" style="height: 15rem; padding-left:7rem; padding-right: 7rem">
             <div class="d-flex justify-content-end">
                 <div class="row text-end">
                     <h1 class="flex-nowrap font-playfair text-moss">
@@ -95,12 +83,12 @@
                     </span>
                 </div>
             </div>
-            <div class="col-6 d-flex align-items-center justify-content-center flex-nowrap p-4 mb-5">
+            <div class="p-4 mb-5">
 
                 @include('app.components.gallery')
 
             </div>
         </div>
-
+        </div>
     </div>
 @endsection

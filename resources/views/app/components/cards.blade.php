@@ -62,7 +62,7 @@
 </div>
 
 
-<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade d-block d-sm-none" data-bs-ride="carousel">
+<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade d-block d-sm-none" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-indicators" style="color: #7D62F4">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" class="active" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
