@@ -13,9 +13,9 @@
     {{--        </p>--}}
     {{--    </div>--}}
 
-    <div class="row ">
-        @include('app.components.cards')
-    </div>
+
+    @include('app.components.cards')
+
 
     {{--    <div class="row">--}}
     {{--        @include('app.components.nav-cards')--}}
