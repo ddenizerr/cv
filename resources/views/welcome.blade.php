@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>Deniz Denizer</title>
+    <link rel="icon" href="/images/favicon-denizdenizer.png" type="image/x-icon">
     <meta name="description" content="Hi there! Welcome to my small world!">
     <meta charset="utf-8">
     <!-- Open Graph Meta Tags -->
@@ -16,7 +17,7 @@
     <meta name="twitter:title" content="Deniz Denizer ">
     <meta name="twitter:description" content="Visit denizdenizer.me to explore my world.">
     <meta name="twitter:image" content="{{ asset('images/navbar-hero-transparent.png') }}">
-    <link rel="icon" href="/images/favicon-transparent.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="/images/favicon-denizdenizer.png" type="image/png" sizes="192x192">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
