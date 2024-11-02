@@ -2,7 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>Deniz Denizer</title>
-    <link rel="icon" href="/images/favicon-denizdenizer.png" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/png" sizes="38x38">
+
     <meta name="description" content="Hi there! Welcome to my small world!">
     <meta charset="utf-8">
     <!-- Open Graph Meta Tags -->
@@ -17,7 +18,6 @@
     <meta name="twitter:title" content="Deniz Denizer ">
     <meta name="twitter:description" content="Visit denizdenizer.me to explore my world.">
     <meta name="twitter:image" content="{{ asset('images/navbar-hero-transparent.png') }}">
-    <link rel="icon" href="/images/favicon-denizdenizer.png" type="image/png" sizes="192x192">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
 <nav class="navbar navbar-expand-lg mb-5">
     <div class="container-fluid fixed-top navbar-custom navbar-shadow ">
         <a class="navbar-brand navbar-colors text-center " href="{{route('home.index')}}"><img class="navbar-brand-logo"
-                                                                                               src="/images/navbar-hero-transparent.png"
+                                                                                               src="/images/denizdenizer-hero-bold.png"
                                                                                                alt="Deniz Denizer"></a>
         <div class="d-flex flex-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
