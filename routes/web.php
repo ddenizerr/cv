@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
     });
 
     Route::get('/download-cv', function () {
-        $filePath = public_path('/cv/denizdenizer.pdf');
+        $filePath = public_path('/cv/denizdenizerPDF.pdf');
         return response()->download($filePath);
     })->name('download-cv');
 

@@ -25,8 +25,7 @@
                         <div class="row">
                             <div class="col d-flex justify-content-center">
                                 <p class="text-center-align fs-6 m-3">
-                                    This character loves to travel, organise social activities, interested in
-                                    music and so much more.</p>
+                                    A social butterfly who loves to travel and live for music and adventure.</p>
                             </div>
                         </div>
                     </div>
@@ -49,9 +48,7 @@
                         <div class="row">
                             <div class="col d-flex justify-content-center">
                                 <p class="text-center-align fs-6 m-3">
-                                    This character is a software developer, brings different strategies to the table, always
-                                    looks on
-                                    the bright side and loves to take responsibilities.</p>
+                                    A driven developer who thrives in problem-solving and embraces responsibility.</p>
                             </div>
                         </div>
                     </div>
