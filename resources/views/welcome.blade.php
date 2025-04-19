@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>Deniz Denizer</title>
-    <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/png" sizes="38x38">
+    <link rel="icon" href="{{ asset('images/website-icon/favicon-32x32.png') }}" type="image/png" sizes="38x38">
 
     <meta name="description" content="Hi there! Welcome to my small world!">
     <meta charset="utf-8">

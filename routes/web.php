@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dashboard\ProjectController;
 use Illuminate\Support\Facades\Route;
 
+
 //Route::middleware(['block.mobile'])->group(function () {
 
 //DASHBOARD
@@ -17,7 +18,22 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('/download-cv', function () {
         $filePath = public_path('/cv/DenizDenizer.pdf');
-        return response()->download($filePath);
+
+        if (!file_exists($filePath)) {
+            abort(404, 'File not found.');
+        }
+
+        return response()->streamDownload(function () use ($filePath) {
+
+            readfile($filePath);
+        }, 'DenizDenizer.pdf', [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'attachment; filename="DenizDenizer.pdf"',
+            'Content-Length' => filesize($filePath),
+            'Cache-Control' => 'no-cache, no-store, must-revalidate',
+            'Pragma' => 'no-cache',
+            'Expires' => '0',
+        ]);
     })->name('download-cv');
 
 
