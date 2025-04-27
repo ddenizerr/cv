@@ -8,10 +8,10 @@
         </p>
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-3">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-decoration-none" style="color: #7c3aed; font-size: 2rem;">
+            <a href="https://www.linkedin.com/in/ddenizer" target="_blank" class="text-decoration-none" style="color: #7c3aed; font-size: 2rem;">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yourprofile" target="_blank" class="text-decoration-none" style="color: #7c3aed; font-size: 2rem;">
+            <a href="https://github.com/ddenizerr" target="_blank" class="text-decoration-none" style="color: #7c3aed; font-size: 2rem;">
                 <i class="fab fa-github"></i>
             </a>
         </div>
