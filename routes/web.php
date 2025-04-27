@@ -23,15 +23,8 @@ use Illuminate\Support\Facades\Route;
             abort(404, 'File not found.');
         }
 
-        return response()->streamDownload(function () use ($filePath) {
-
-            readfile($filePath);
-        }, 'DenizDenizer.pdf', [
+        return response()->file($filePath, [
             'Content-Type' => 'application/pdf',
-            'Content-Length' => filesize($filePath),
-            'Cache-Control' => 'no-cache, no-store, must-revalidate',
-            'Pragma' => 'no-cache',
-            'Expires' => '0',
         ]);
     })->name('download-cv');
 
