@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
     });
 
     Route::get('/download-cv', function () {
-        $filePath = public_path('/cv/DenizDenizer.pdf');
+        $filePath = public_path('cv/DenizDenizer.pdf');
 
         if (!file_exists($filePath)) {
             abort(404, 'File not found.');
@@ -28,7 +28,6 @@ use Illuminate\Support\Facades\Route;
             readfile($filePath);
         }, 'DenizDenizer.pdf', [
             'Content-Type' => 'application/pdf',
-            'Content-Disposition' => 'attachment; filename="DenizDenizer.pdf"',
             'Content-Length' => filesize($filePath),
             'Cache-Control' => 'no-cache, no-store, must-revalidate',
             'Pragma' => 'no-cache',
