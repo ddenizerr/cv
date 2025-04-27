@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-md-6 col-12 d-flex mb-2 align-items-center justify-content-center">
                     <div class="position-relative">
-                        <img class="z-0 img-fluid" src="/images/deniz-irish-memoji.png" alt="Deniz Memoji">
+                        <img class="z-0 img-fluid" src="/images/avatars/memoji-casual.png" style="width:325px; height: 325px;" alt="Deniz Memoji">
                         <span class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x p-4 text-center rounded-4 fs-6">
                 Traveler, deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
             </span>

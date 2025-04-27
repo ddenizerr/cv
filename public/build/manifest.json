@@ -3,13 +3,16 @@
     "file": "assets/scales-7eb460d6.png",
     "src": "public/images/scales.png"
   },
-  "resources/css/app.css": {
-    "file": "assets/app-9b12f354.css",
+  "resources/css/app.scss": {
+    "file": "assets/app-7a43c7ca.css",
     "isEntry": true,
-    "src": "resources/css/app.css"
+    "src": "resources/css/app.scss"
   },
   "resources/js/app.js": {
-    "file": "assets/app-c8763d6f.js",
+    "css": [
+      "assets/app-7a43c7ca.css"
+    ],
+    "file": "assets/app-5709b9f9.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

@@ -1,3 +1,5 @@
+@import "bootstrap/scss/bootstrap";
+
 /*ROOT*/
 :root {
     --midnight-moss: #7D62F4;
@@ -235,8 +237,8 @@ vr {
 
 .card-avatar {
     vertical-align: middle;
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
 }
 
