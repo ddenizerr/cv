@@ -16,7 +16,7 @@
                     <div class="position-relative">
                         <img class="z-0 img-fluid" src="/images/avatars/memoji-casual.png" style="width:325px; height: 325px;" alt="Deniz Memoji">
                         <span class="avatar-subtext text-onyx z-3 position-absolute start-50 translate-middle-x p-4 text-center rounded-4 fs-6">
-                Traveller, deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
+                Deep conservationist, 🐶, 🐱 and animal lover, photographer, and all others...
             </span>
                     </div>
                 </div>
