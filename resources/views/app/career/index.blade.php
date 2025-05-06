@@ -16,8 +16,14 @@
             </a>
         </div>
 
+
+        <div>
+
+            <a href="https://calendar.app.google/enJNWsgv2GsykUMv8" class="btn bg-moss text-white book-appointment-button"> Book an appointment </a>
+        </div>
+
         <div class="mt-5 d-grid">
-            <a href="{{ route('download-cv') }}" class="btn text-white" style="background-color: #7c3aed;">Download My CV</a>
+            <a href="{{ route('download-cv') }}" class="btn text-white " style="background-color: #7c3aed;">Download My CV</a>
         </div>
     </div>
 

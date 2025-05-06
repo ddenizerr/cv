@@ -291,10 +291,6 @@ footer {
     filter: grayscale(0%);
 }
 
-.block {
-
-}
-
 .block-title {
     color: var(--green-teal);
 }
@@ -496,6 +492,10 @@ footer {
 .main-timeline .timeline:nth-child(2n) .timeline-content {
     padding: 20px 50px 20px 0;
     text-align: right
+}
+
+.book-appointment-button:hover{
+    background-color: var(--midnight-moss) !important;
 }
 
 @media only screen and (max-width: 991px) {
