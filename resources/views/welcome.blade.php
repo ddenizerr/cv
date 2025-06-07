@@ -32,8 +32,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Cinzel:wght@400;500;600;700;800;900&family=Homemade+Apple&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- BACKGROUNDS -->
-    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
 
     @vite(['resources/js/app.js', 'resources/css/app.scss'])
     <script async src="//www.instagram.com/embed.js"></script>
@@ -54,19 +53,17 @@
 
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="nav text-decoration-none">
+            <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link text-onyx  " aria-current="page" href="{{route('about.index')}}">About Me</a>
+                    <a class="nav-link text-onyx" aria-current="page" href="{{route('about.index')}}">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-onyx" href="{{route('career.index')}}">Career</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-onyx" aria-current="page" href="{{route('contact.index')}}">Contact Me</a>
+                </li>
             </ul>
-            {{--            <ul class="navbar-nav mx-auto">--}}
-            {{--                <li class="nav-item">--}}
-            {{--                    <a class="nav-link " aria-current="page" href="">Contact Me</a>--}}
-            {{--                </li>--}}
-            {{--            </ul>--}}
         </div>
     </div>
 </nav>
