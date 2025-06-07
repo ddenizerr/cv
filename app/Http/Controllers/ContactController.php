@@ -40,7 +40,7 @@ class ContactController extends Controller
             return redirect()->back()->with('error', 'Your message was sent, but we could not send a confirmation email. Please check your email address.');
         }
 
-        Log::info('Contact form email sent successfully', [
+        Log::info('Contact form and received confirmation message sent successfully! ', [
             'data' => $validatedData,
         ]);
 
