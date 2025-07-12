@@ -7,7 +7,13 @@
         <div class="row">
             <div class="col-12 col-md-10 col-lg-6" id="app">
                 <google-map></google-map>
+
             </div>
+            <div class="col-12 col-md-10 col-lg-6" id="app">
+                <book-card></book-card>
+
+            </div>
+
         </div>
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-3">

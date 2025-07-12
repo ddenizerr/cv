@@ -97,7 +97,7 @@ onMounted(async () => {
     <div ref="mapElement" class="map-container">
     </div>
       <div class="map-footer">
-          <span class="city">Cork </span> 
+          <span class="city">Cork </span>
           <span class="country">Ireland</span>
       </div>
 
@@ -138,7 +138,7 @@ onMounted(async () => {
   bottom: 1px;
   width: 100%;
   height: 25%;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 0.2rem;
   line-height: 1.4rem;
   padding-top: 2.4rem;
