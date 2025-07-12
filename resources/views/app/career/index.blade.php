@@ -5,7 +5,7 @@
 
 
         <div class="row">
-            <div class="col-6" id="app">
+            <div class="col-12 col-md-10 col-lg-6" id="app">
                 <google-map></google-map>
             </div>
         </div>
