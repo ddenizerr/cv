@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Dashboard\ProjectController;
+use App\Http\Controllers\GiftController;
+use App\Mail\GiftInvitation;
 use Illuminate\Support\Facades\Route;
 
 
@@ -19,6 +21,14 @@ Route::controller(ContactController::class)->prefix('contact')->name('contact.')
     Route::get('/', 'index')->name('index');
     Route::post('/send-mail', 'contact')->name('send-mail');
 });
+
+Route::get('/preview-gift', function () {
+    $data = ['name' => 'Dario & Angela', 'familiar' => false, 'honeymoon' => false];
+    return new GiftInvitation($data);
+});
+
+Route::get('/dashboard/gift-form', [GiftController::class, 'sendGiftForm'])->name('gift.form');
+Route::post('/admin/send-gift', [GiftController::class, 'sendGiftEmail'])->name('gift.send');
 
 Route::get('/download-cv', function () {
     $filePath = public_path('cv/DenizDenizer.pdf');
