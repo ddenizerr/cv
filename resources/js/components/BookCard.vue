@@ -4,7 +4,6 @@
 
 <template>
     <div class="book-card">
-        <p class="book-card-label">What I'm studying</p>
         <h2 class="title">The Pragmatic<br />Programmer</h2>
         <p class="author">Andrew Hunt & David Thomas</p>
         <img
@@ -18,15 +17,15 @@
 <style scoped>
 .book-card {
     border-radius: 16px;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 1rem;
-    width: 280px;
+    width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     font-family: system-ui, sans-serif;
 }
 
 .book-card-label {
-    background-color: #faf8f8;
+    background-color: white;
     color: #795fea;
     font-size: 12px;
     font-weight: bold;
