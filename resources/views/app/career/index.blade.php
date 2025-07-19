@@ -1,33 +1,36 @@
 @extends('welcome')
 
 @section('content')
-    <div class="row mb-4 index-title">
+    <div class="mb-4 index-title">
 
+        <div class="d-flex justify-content-around gap-4 flex-wrap">
 
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-6" id="app">
-                <google-map></google-map>
+            <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-1">
+                <div>
+                    <book-a-call></book-a-call>
+                </div>
+                <div>
+                    <socials></socials>
+                </div>
             </div>
+
+            <div class="col-12 col-md-10 col-lg-4" id="app">
+                <google-map></google-map>
+
+            </div>
+            <div class="col-12 col-md-10 col-lg-4" id="app">
+                <book-card></book-card>
+
+            </div>
+            <div class="col-12 col-md-10 col-lg-3 " id="app">
+                <experience></experience>
+
+            </div>
+
         </div>
 
-        <div class="d-flex justify-content-center align-items-center gap-4 mt-3">
-            <a href="https://www.linkedin.com/in/ddenizer" target="_blank" class="text-decoration-none"
-               style="color: #7c3aed; font-size: 2rem;">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ddenizerr" target="_blank" class="text-decoration-none"
-               style="color: #7c3aed; font-size: 2rem;">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
 
-        <div class="mt-5 d-grid">
-            <a href="{{ route('download-cv') }}" class="btn text-white" style="background-color: #7c3aed;">Download My
-                CV</a>
-        </div>
     </div>
-
-
 
 @endsection
 
