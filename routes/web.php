@@ -2,18 +2,9 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Dashboard\ProjectController;
+use App\Http\Controllers\Gift\GiftEmailController;
 use Illuminate\Support\Facades\Route;
 
-
-//DASHBOARD
-Route::controller(ProjectController::class)->prefix('projects')->name('projects.')->group(function () {
-    Route::get('/', 'index')->name('index');
-    Route::get('/fetch', 'fetch')->name('fetch');
-    Route::get('/create', 'create')->name('create');
-    Route::patch('/store', 'store')->name('store');
-    Route::patch('/{project}/update', 'update')->name('update');
-    Route::delete('/{project}/delete', 'delete')->name('delete');
-});
 
 Route::controller(ContactController::class)->prefix('contact')->name('contact.')->group(function () {
     Route::get('/', 'index')->name('index');
@@ -31,6 +22,12 @@ Route::get('/download-cv', function () {
         'Content-Type' => 'application/pdf',
     ]);
 })->name('download-cv');
+
+Route::controller(GiftEmailController::class)->prefix('gift')->name('gift.')->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::post('/preview', 'preview')->name('preview');
+    Route::post('/send', 'send')->name('send');
+});
 
 
 include('application.php');
