@@ -3,12 +3,9 @@
 @section('content')
     <div class="row mb-4 index-title">
 
-
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-6" id="app">
-                <google-map></google-map>
-            </div>
-        </div>
+        <div class="col-lg-12 text-center">
+            <h1 class="text-onyx">This page is under construction 🚧</h1>
+            <p class="text-muted fs-5">In the meantime you can peak at my career journey and experiences here by the following links.</p>
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-3">
             <a href="https://www.linkedin.com/in/ddenizer" target="_blank" class="text-decoration-none"
