@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Mail\GiftInvitation;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class GiftController extends Controller
@@ -15,7 +15,7 @@ class GiftController extends Controller
 
     public function sendGiftEmail(Request $request)
     {
-        $validated = $request->validate([
+        $validatedFormData = $request->validate([
             'names' => 'required|array|min:1',
             'names.*' => 'required|string|max:255',
             'email' => 'required|email',
@@ -23,16 +23,17 @@ class GiftController extends Controller
             'honeymoon' => 'nullable|boolean',
         ]);
 
+        return redirect()->route('gift.preview', $validatedFormData);
+    }
+
+    public function preview(Request $request): GiftInvitation
+    {
         $data = [
-            'name' => implode(' & ', $validated['names']),
-            'email' => $validated['email'],
-            'familiar' => $request->has('familiar'),
-            'honeymoon' => $request->has('honeymoon'),
+            'name' => implode( ' & ', $request->input('names', [])),
+
         ];
 
-        Mail::to($data['email'])->send(new GiftInvitation($data));
-
-        $nameCount = count($validated['names']);
-        return redirect()->back()->with('success', 'Gift email sent successfully to ' . $data['name'] . ' (' . $nameCount . ' person' . ($nameCount > 1 ? 's' : '') . ')!');
+        $data = ['name' => 'Dario & Angela', 'familiar' => false, 'honeymoon' => false];
+        return new GiftInvitation($data);
     }
 }

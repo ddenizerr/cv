@@ -22,12 +22,12 @@ Route::controller(ContactController::class)->prefix('contact')->name('contact.')
     Route::post('/send-mail', 'contact')->name('send-mail');
 });
 
-Route::get('/preview-gift', function () {
-    $data = ['name' => 'Dario & Angela', 'familiar' => false, 'honeymoon' => false];
-    return new GiftInvitation($data);
+    Route::get('/preview-gift', function () {
+    ;
 });
 
 Route::get('/dashboard/gift-form', [GiftController::class, 'sendGiftForm'])->name('gift.form');
+Route::get('/dashboard/gift-preview', [GiftController::class, 'preview'])->name('gift.preview');
 Route::post('/admin/send-gift', [GiftController::class, 'sendGiftEmail'])->name('gift.send');
 
 Route::get('/download-cv', function () {
