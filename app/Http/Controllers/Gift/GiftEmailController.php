@@ -7,6 +7,7 @@ use App\Mail\GiftInvitation;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -32,7 +33,7 @@ class GiftEmailController extends Controller
         return new GiftInvitation($data);
     }
 
-    public function send(Request $request)
+    public function send(Request $request): RedirectResponse
     {
         $data = $request->validate([
             'giftTitle' => 'required',
