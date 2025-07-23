@@ -8,22 +8,22 @@
             <div class="entry">
                 <div class="dot"></div>
                 <div class="content">
+                    <h3>Full Stack Developer @ CIU</h3>
+                    <p> Nicosia, CY</p>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>Full Stack Developer @ Manta Ray Media</h3>
+                    <p> London, UK</p>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="dot"></div>
+                <div class="content">
                     <h3>Software Engineer @ Apple</h3>
-                    <p>Cork, IR - Contract</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Software Engineer @ Manta Ray Media</h3>
-                    <p> London, UK – Contract</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>Software Engineer @ CIU</h3>
-                    <p> Nicosia, CY – Full Time</p>
+                    <p>Cork, IR</p>
                 </div>
             </div>
         </div>
@@ -37,25 +37,12 @@
 .experience-card {
     background: white;
     border-radius: 20px;
-    width: fit-content;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     font-family: system-ui, sans-serif;
     position: relative;
     padding-bottom: 4rem;
     height: 100%;
-}
-
-.experience-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: white;
-    color: #7D62F4;
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    z-index: 10;
 }
 
 .timeline {
@@ -124,7 +111,7 @@
 }
 
 .cv-button {
-    background-color: #8e44ec;
+    background-color: #755ce1;
     color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
@@ -136,7 +123,7 @@
 }
 
 .cv-button:hover {
-    background-color: #732dd2;
+    background-color: #333;
     transform: scale(1.05);
 }
 </style>

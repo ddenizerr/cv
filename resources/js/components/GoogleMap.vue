@@ -78,7 +78,7 @@ onMounted(async () => {
 
     const map = new google.maps.Map(mapElement.value, {
         center: {lat: 51.8985, lng: -8.4756}, // Cork City
-        zoom: 15,
+        zoom: 14,
         styles: mapStyles,
         mapTypeControl: false,
         fullScreenControl: false,
@@ -90,16 +90,13 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div class="map-card">
+    <div class="map-card hidden max-sm:hidden">
         <div class="">
             <h2 class="title">Cork, Ireland <i class="fa-solid fa-clover"></i></h2>
-            <p class="author">Currently based and living in</p>
+            <p class="sub-title">Currently based in</p>
         </div>
 
         <div class="map-wrapper">
-            <div class="map-label">
-                Map
-            </div>
             <div ref="mapElement" class="map-container">
             </div>
 
@@ -113,15 +110,15 @@ onMounted(async () => {
     background: white;
     border-radius: 20px;
     padding: 1rem;
-    width:  100%;
-    height: 100%;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     font-family: system-ui, sans-serif;
+    max-width: 100%;
 }
 .map-wrapper {
     position: relative;
     width: 100%;
-    height: 88%;
+    aspect-ratio: 1.6; /* Responsive height instead of fixed */
 }
 
 .map-label {
@@ -145,38 +142,6 @@ onMounted(async () => {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.map-footer {
-    position: absolute;
-    bottom: 1px;
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    line-height: 1.6rem;
-    padding-top: 5.4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: transparent;
-    background: linear-gradient(to top, white 20%, rgba(255, 255, 255, 0));
-    color: #7D62F4;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    font-family: 'Lato', sans-serif;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.map-footer .city {
-    font-size: 1.5rem;
-}
-
-.map-footer .country {
-    font-size: 2.2rem;
-}
-
 .title {
     font-size: 18px;
     font-weight: bold;
@@ -186,12 +151,10 @@ onMounted(async () => {
     text-align: left;
 }
 
-
-.author {
+.sub-title {
     font-size: 14px;
     color: rgb(112, 90, 215);
     margin-bottom: 16px;
 }
-
 
 </style>

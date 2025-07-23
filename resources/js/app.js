@@ -6,6 +6,7 @@ import BookCard from "./components/BookCard.vue";
 import Experience from "./components/Experience.vue";
 import BookACall from "./components/BookACall.vue";
 import Socials from "./components/Socials.vue";
+import Projects from "./components/Projects.vue";
 
 const app = createApp({
     components: {
@@ -13,7 +14,8 @@ const app = createApp({
         BookCard,
         Experience,
         BookACall,
-        Socials
+        Socials,
+        Projects,
     }
 });
 app.mount('#app');

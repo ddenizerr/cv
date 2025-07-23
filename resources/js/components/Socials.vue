@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class=" card align-items-center">
+    <div class="card">
         <a href="https://www.linkedin.com/in/ddenizer" target="_blank" class="text-decoration-none common linkedin">
             <i class="fab fa-linkedin"></i>
         </a>
@@ -24,11 +24,11 @@
 .card {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
     background-color: white;
+    align-items: center;
     padding: 1.5rem;
     border-radius: 12px;
-    gap:  1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     max-height:  7rem;
 }

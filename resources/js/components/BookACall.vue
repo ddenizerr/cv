@@ -26,8 +26,8 @@
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
+  border-radius: 35px;
+  font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;

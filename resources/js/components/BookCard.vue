@@ -8,9 +8,6 @@
         <p class="author">Andrew Hunt & David Thomas</p>
 
        <div class="book-wrapper">
-           <div class="book-label">
-               Book
-           </div>
            <img
                class="cover"
                src="/images/pragmatic-programmer.jpg"
