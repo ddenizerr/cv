@@ -67,7 +67,7 @@
     content: '';
     position: absolute;
     left: 37px;
-    top: 10px;
+    top: 0;
     bottom: 0;
     width: 2px;
     background-color: #705ad7;

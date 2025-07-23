@@ -3,29 +3,28 @@
 @section('content')
     <div class="mb-4 index-title">
 
-        <div class="d-flex justify-content-around gap-4 flex-wrap">
+        <div class="row">
 
-            <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-1">
-                <div>
+            <div class="col-12 flex-grow d-flex align-items-center justify-content-between">
                     <book-a-call></book-a-call>
-                </div>
-                <div>
                     <socials></socials>
+            </div>
+
+            <div class="d-flex justify-content-between mt-2">
+                <div class="col-12 col-md-10 col-lg-4 flex-grow " id="app">
+                    <google-map></google-map>
+
+                </div>
+                <div class="col-12 col-md-10 col-lg-4" id="app">
+                    <book-card></book-card>
+
+                </div>
+                <div class="col-12 col-md-10 col-lg-3 " id="app">
+                    <experience></experience>
+
                 </div>
             </div>
 
-            <div class="col-12 col-md-10 col-lg-4" id="app">
-                <google-map></google-map>
-
-            </div>
-            <div class="col-12 col-md-10 col-lg-4" id="app">
-                <book-card></book-card>
-
-            </div>
-            <div class="col-12 col-md-10 col-lg-3 " id="app">
-                <experience></experience>
-
-            </div>
 
         </div>
 

@@ -3,11 +3,12 @@
 </script>
 
 <template>
-  <div class="book-call-container">
-    <button class="book-call-button">Book a call</button>
-    <p class="book-call-text">Feel free to explore my portfolio and reach out — I’d love to connect!</p>
-  </div>
+    <div class="book-call-container">
+        <button class="book-call-button">Book a call</button>
+        <p class="book-call-text">Feel free to schedule a call to discuss your ideas or projects!</p>
+    </div>
 </template>
+
 
 <style scoped>
 .book-call-container {
@@ -18,8 +19,6 @@
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 700px;
-  margin: 2rem auto;
 }
 
 .book-call-button {

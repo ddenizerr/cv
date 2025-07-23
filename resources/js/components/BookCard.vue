@@ -4,13 +4,20 @@
 
 <template>
     <div class="book-card">
-        <h2 class="title">The Pragmatic<br />Programmer</h2>
+        <h2 class="title">The Pragmatic Programmer</h2>
         <p class="author">Andrew Hunt & David Thomas</p>
-        <img
-            class="cover"
-            src="/images/pragmatic-programmer.jpg"
-            alt="Book cover: The Pragmatic Programmer"
-        />
+
+       <div class="book-wrapper">
+           <div class="book-label">
+               Book
+           </div>
+           <img
+               class="cover"
+               src="/images/pragmatic-programmer.jpg"
+               alt="Book cover: The Pragmatic Programmer"
+           />
+       </div>
+
     </div>
 </template>
 
@@ -24,17 +31,17 @@
     font-family: system-ui, sans-serif;
 }
 
-.book-card-label {
-    background-color: white;
-    color: #795fea;
-    font-size: 12px;
+.book-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    color: #7D62F4;
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
-    display: inline-block;
-    margin-bottom: 12px;
-    border: 1px solid #e0d4f7;
+    font-size: 0.9rem;
+    z-index: auto;
 }
 
 .title {

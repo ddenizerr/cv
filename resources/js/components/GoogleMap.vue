@@ -91,15 +91,16 @@ onMounted(async () => {
 
 <template>
     <div class="map-card">
+        <div class="">
+            <h2 class="title">Cork, Ireland <i class="fa-solid fa-clover"></i></h2>
+            <p class="author">Currently based and living in</p>
+        </div>
+
         <div class="map-wrapper">
             <div class="map-label">
                 Map
             </div>
             <div ref="mapElement" class="map-container">
-            </div>
-            <div class="map-footer">
-                <span class="city">Cork </span>
-                <span class="country">Ireland</span>
             </div>
 
         </div>
@@ -120,7 +121,7 @@ onMounted(async () => {
 .map-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 88%;
 }
 
 .map-label {
@@ -150,9 +151,9 @@ onMounted(async () => {
     width: 100%;
     height: 25%;
     text-align: center;
-    letter-spacing: 0.2rem;
-    line-height: 1.4rem;
-    padding-top: 2.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    padding-top: 5.4rem;
     left: 50%;
     transform: translateX(-50%);
     border-top: transparent;
@@ -161,7 +162,6 @@ onMounted(async () => {
     font-weight: bold;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     z-index: 10;
     display: flex;
@@ -174,6 +174,24 @@ onMounted(async () => {
 }
 
 .map-footer .country {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(117, 92, 225);
+    line-height: 1.3;
+    margin: 0 0 4px;
+    text-align: left;
+}
+
+
+.author {
+    font-size: 14px;
+    color: rgb(112, 90, 215);
+    margin-bottom: 16px;
+}
+
+
 </style>
